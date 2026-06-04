@@ -1,0 +1,352 @@
+SOURCE: Specialization in Artificial Intelligence
+URL: https://omscs.gatech.edu/specialization-artificial-intelligence-formerly-interactive-intelligence
+============================================================
+
+Specialization in Artificial Intelligence (formerly Interactive Intelligence) | Online Master of Science in Computer Science (OMSCS)
+
+						Skip to main navigation
+
+						Skip to main content
+
+MENU
+
+              Online Master of Science in Computer Science (OMSCS)
+
+              College of Computing
+
+Main navigation
+
+About
+
+About OMSCS
+
+Annual Report
+
+2025 Annual Report
+
+2024 Annual Report
+
+10th Anniversary
+
+OMSCS FAQs
+
+Prospective Students
+
+Admission Criteria
+
+Application
+
+Apply
+
+Deadlines, Decisions, Requirements, and Guidelines
+
+Additional Application Guidelines
+
+Technical Requirements
+
+Cost and Payment Schedule
+
+Preparing Yourself for OMSCS
+
+Prospective Student FAQs
+
+Academics
+
+Degree Requirements
+
+Courses
+
+Current Courses
+
+Seminars
+
+Course Offering History
+
+Specializations
+
+Research Opportunities
+
+OMSCS Open Courseware
+
+Student Life
+
+OMSCS Conference
+
+About the Conference
+
+Registration
+
+Call for Proposals
+
+Program
+
+Keynote
+
+Travel and Accommodations
+
+Sponsorship
+
+Meet the Chairs
+
+FAQ
+
+2025 Recap
+
+Past Conferences
+
+Media
+
+All News and Stories
+
+By Category
+
+Program News
+
+In The Press
+
+OMSCS Research
+
+OMSCS Buzz Podcast
+
+OMSCS Speaker Series
+
+People
+
+Directory
+
+Faculty
+
+Staff
+
+Contact Us
+
+Search
+
+Search
+
+Specialization in Artificial Intelligence (formerly Interactive Intelligence)
+
+For a Master of Science in Computer Science, Specialization in Artificial Intelligence (15 hours), students must select from the following:
+*The following is a complete look at the courses that may be selected to fulfill the Artificial Intelligence specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program.
+Core Courses (9 hours)
+Algorithms and Design: Take one (1) course from:
+CSE6140 Computational Science and Engineering Algorithms
+CS 6300 Software Development Process
+CS 6301 Advanced Topics in Software Engineering​
+CS 6505 Computability, Complexity, and Algorithms
+CS 6515 Introduction to Graduate Algorithms
+And, two (2) courses from:
+CS 6601 Artificial Intelligence
+CS 7637 Knowledge-Based AI
+CS 7641 Machine Learning
+
+Electives (6 hours)
+Pick two (2) courses from:
+Interaction:
+CS 6440 Introduction to Health Informatics
+CS 6460 Educational Technology: Conceptual Foundations
+CS 6465 Computational Journalism
+CS 6471 Computational Social Science
+CS 6603 AI, Ethics, and Society
+CS 6750 Human-Computer Interaction
+AI Methods:
+CS 6476 Computer Vision
+CS 7631 Multi-Robot Systems
+CS 7632 Game AI
+CS 7633 Human-Robot Interaction
+CS 7634 AI Storytelling in Virtual Worlds
+CS 7643 Deep Learning
+CS 7647 Machine Learning with Limited Supervision
+CS 7650 Natural Language Processing
+CS 8803 Special Topics: Advanced Game AI
+Cognition:
+CS 6795 Introduction to Cognitive Science
+CS 7610 Modeling and Design
+CS 7651 Human and Machine Learning
+CS 8803 Special Topics: Computational Creativity
+
+Free Electives (15 hours)
+Free electives may be any courses offered through the OMSCS program. You can find the list of current OMSCS courses
+here
+.
+
+Resources
+
+Georgia Tech Resources
+
+Offices and Departments
+
+News Center
+
+Campus Calendar
+
+Special Events
+
+GreenBuzz
+
+Institute Communications
+
+Visitor Resources
+
+Campus Visits
+
+Directions to Campus
+
+Visitor Parking Information
+
+GT visitor Wireless Network Information
+
+Georgia Tech Global Learning Center
+
+Georgia Tech Hotel and Conference Center
+
+Barnes and Noble at Georgia Tech
+
+Ferst Center for the Arts
+
+Robert C. Williams Paper Museum
+
+Colleges, Instructional Sites and Research
+
+Colleges
+
+College of Computing
+
+College of Design
+
+College of Engineering
+
+College of Lifetime Learning
+
+College of Sciences
+
+Ivan Allen College of Liberal Arts
+
+Scheller College of Business
+
+Instructional Sites
+
+Georgia Tech-Europe
+
+Georgia Tech-Shenzhen
+
+Georgia Tech Online
+
+Professional Education
+
+The Language Institute
+
+Global Footprint
+
+Global Engagement
+
+Research
+
+Research at Georgia Tech
+
+Georgia Tech Research Institute
+
+Commercialization
+
+Enterprise Innovation Institute
+
+Corporate Engagement
+
+College of Computing Resources Menu
+
+College of Computing Resources
+
+Intranet
+
+Student and Parent Resources
+
+Student Resources
+
+Apply
+
+BuzzPort
+
+Buzzcard
+
+Career Center
+
+Commencement
+
+Graduate and Postdoctoral Education
+
+Undergraduate Education
+
+Library
+
+Student Life
+
+Student Entrepreneurship
+
+Education Abroad
+
+Canvas
+
+Parent Resources
+
+Parent and Family Programs
+
+Division of Student Life
+
+Scholarships and Financial Aid
+
+News Feed
+
+Microsoft's MDASH AI Vulnerability Scanner Finds Four Critical Windows RCEs
+
+Georgia Tech Faculty and Researchers Recognized With 2026 Regents’ Awards
+
+Georgia Tech Builds Network Sandbox to Test Hospital Cyber Defenses
+
+College of Computing
+
+Georgia Institute of Technology
+
+    North Avenue
+
+Atlanta, GA 30332
+
+          404.894.2000
+
+College of Computing Map
+
+General
+
+Directory
+
+Employment
+
+Emergency Information
+
+Legal
+
+Equal Opportunity, Nondiscrimination, and Anti-Harassment Policy
+
+Legal & Privacy Information
+
+Human Trafficking Notice
+
+Title IX/Sexual Misconduct
+
+Hazing Public Disclosures
+
+Accessibility
+
+Accountability
+
+Accreditation
+
+Report Free Speech and Censorship Concern
+
+© 2026 Georgia Institute of
+      Technology
+
+GT LOGIN
+
+GT LOGIN

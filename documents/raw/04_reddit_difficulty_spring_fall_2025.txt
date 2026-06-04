@@ -1,0 +1,582 @@
+SOURCE: Courses Ranked by Difficulty Spring/Fall 2025
+URL: https://www.reddit.com/r/OMSCS/comments/1hsbc76/all_courses_ranked_by_difficulty_2025_springfall/
+============================================================
+
+Skip to main content
+All Courses Ranked by Difficulty 2025: Spring/Fall : r/OMSCS
+Sign Up
+Log In
+Expand user menu
+Go to OMSCS
+r/OMSCS
+•
+1y ago
+Stagef6
+All Courses Ranked by Difficulty 2025: Spring/Fall
+Megathread
+
+This is a list which combines the last three years of grades and reviews data to sort all courses by average difficulty. Only Fall and Spring semester information is considered.
+
+TL;DR: I pull information from several sources to sort courses by average "difficulty". There are many different forms of difficulty from the material being difficult to understand, to the course assignments being difficult to get a good/passing grade on or to complete in a timely manner, to the course structure/staff making it difficult to inspire interest in the material. The work represented here attempts to distill the average student experience in each course into one digestible list. Unless you happen to be THE perfectly average student, there will be rankings here you disagree with. If everyone took every course, everyone's difficulty list would look different. The goal of this list is to be one of the best sortings possible across all students, and provide directional guidance for students planning their course sequences and pairings. The table includes an overall ranking as well as some information about their ranking in each category.
+
+This is an average course-by-course ranking from 1 to 66. The tiers only exist to make the list easier to read. Separations for the tiers were selected based on where the largest gaps exist between two courses. For example, the gap in difficulty between SAT and KBAI is larger than the gap between SAT and AI4R. That said, SAT is closer in difficulty to KBAI than it is to AISA.
+
+While I try to maintain as much objectivity as possible, my subjective judgements include choosing to use 3 years as the cutoff for data consideration, how to weight recent semesters vs older semesters, and how much to weight inputs relative to eachother (ie. grades (A, B, C-F, W) vs reviews (ratings, workload, difficulty)), and how to handle special cases like SDCC (enforced prereq and pass/fail grading) and courses with few or no reviews. I don't know where exactly a course will land in this ranking until the weights are finished sorting them and I don't make manual adjustments to course positions. Check the methodology for more details.
+
+If you're familiar with my past lists, this list is similar with some small improvements mentioned in the methodology. If you're unfamiliar but find this useful, feel free to check out the other lists below for summer and workload distributions.
+
+Related Posts:
+
+All Summer Courses Ranked by Difficulty
+
+All Courses Workload Distributions Table
+
+Methodology:
+
+Average grades by semester were recorded from Lite. OSCAR and omscs.rocks were used to get an idea of the number of students who went into those averages each semester to get weighted average rates of A’s, B’s, W’s, etc... for each course. That information was compared to review data from OMSHub and central to get an overall estimate of course difficulty. Presumably if more students get A’s and B’s and report a course as having a high overall rating with lower difficulty and workload requirements, that course is relatively easier than a course with high rates of C’s and W’s. In rough terms, with ‘+’ indicating easier and ‘-’ indicating harder, the weight of factors from most to least important is as follows: % A’s (+), Workload (-), Difficulty Rating (-), % C-F's (-), % B’s (+), % W’s (-), Overall Rating (+).
+
+Recent data is generally weighed heavier since courses change over time. For this list, only reviews from Spring 2022 forward are considered, except for courses with less than 15 reviews where older reviews were used to increase sample size. For most courses, only grades from the most recent 5 long semesters are included. A few courses have on-campus offerings one semester/year that cannot be separated from OMSCS grades in lite because they have the same professor as the OMSCS section. For these courses (listed in notes), the 4 most recent long semesters with no on-campus offering were used. In all cases, grades from the most recent semesters are weighed heavier than older semesters included. These recency cutoffs were chosen to strike a balance between maintaining a significant number of samples and creating a list that accounts for any recent course changes.
+
+All 66 courses ranked from easiest to hardest, in tiers:
+
+Rank, Grades Rank, Rating, Difficulty, and Workload are reported as relative rank with 1 oriented as "easiest" and 66 as "hardest".
+
+Tier 1 (Free Credits)
+Rank	Course Number	AKA	A%	A-B%	W%	Grades Rank	Rating	Difficulty	Workload
+
+1	MGT 6311	DM	75.0%	93.4%	3.8%	5	22	1	1
++2	CSE 6742	MSMG	88.4%	92.1%	6.8%	2	9	4	4
+3	CS 8803 O15	Law	77.0%	90.6%	6.1%	11	3	6	3
+4	MGT 8813	FMX	83.9%	90.0%	8.2%	6	64	3	2
+5	CS 6261	SIR	83.7%	93.8%	5.6%	1	41	9	9
+6	INTA 6450	DAS	80.9%	91.6%	6.3%	4	62	5	5
+Tier 2 (Easy)
+Rank	Course Number	AKA	A%	A-B%	W%	Grades Rank	Rating	Difficulty	Workload
+
+7	CS 6795	ICS	82.3%	89.4%	8.7%	10	21	7	11
+8	CS 7650	NLP	86.7%	93.1%	3.2%	3	17	12	14
+9	CS 6603	AIES	78.5%	87.7%	9.4%	16	61	2	8
+10	CS 8803 O17	GE	82.9%	89.5%	9.1%	8	44	17	6
+11	CS 6457	VGD	83.8%	89.0%	9.6%	9	11	15	20
++12	CS 6440	IHI	83.5%	87.6%	11.0%	12	36	22	21
+13	CS 6150	C4G	78.5%	83.2%	14.1%	17	59	9	10
+*14	CS 6435	DHE	81.0%	90.5%	7.9%	7	N/A	N/A	N/A
+15	CS 6300	SDP	67.6%	84.8%	9.3%	21	32	13	12
+Tier 3 (Entry Level)
+Rank	Course Number	AKA	A%	A-B%	W%	Grades Rank	Rating	Difficulty	Workload
+
+16	PUBP 6725	ISP	43.9%	86.7%	6.4%	23	65	8	7
+17	CS 6262	NetSec	72.5%	83.2%	12.4%	19	40	23	15
+18	CS 7470	MUC	82.0%	87.8%	9.9%	13	66	18	39
+19	PUBP 8823	GCY	75.5%	88.8%	8.6%	15	49	9	59
+20	CSE 6242	DVA	82.7%	87.4%	9.9%	14	60	39	40
+21	ISYE 6644	Sim	51.5%	89.0%	9.8%	18	14	47	19
+*22	CS 8803 O24	i2R	72.3%	82.9%	12.8%	20	N/A	N/A	N/A
+23	CS 6460	EdTech	63.0%	78.3%	18.0%	25	5	21	42
+24	CS 6250	CN	61.6%	76.4%	15.7%	30	39	14	18
+25	CS 7632	Game AI	66.2%	78.0%	19.0%	22	16	31	25
+Tier 4 (Medium)
+Rank	Course Number	AKA	A%	A-B%	W%	Grades Rank	Rating	Difficulty	Workload
+
+26	ISYE 6501	iAM	48.4%	79.9%	12.3%	32	26	25	16
+27	CS 7639	CPDA	55.7%	77.7%	19.5%	28	58	24	13
+28	CS 6310	SAD	64.3%	77.4%	17.4%	26	63	16	23
+29	CS 6035	IIS	60.3%	75.2%	15.6%	35	30	19	17
+30	CS 6750	HCI	56.7%	74.5%	20.5%	34	19	20	24
+31	CS 7280	NetSci	60.1%	78.3%	17.3%	27	38	38	27
+32	CS 8803 O21	GPU	62.4%	75.9%	16.7%	31	15	36	29
+$33	CS 6747	AMRE	63.5%	71.7%	25.5%	33	7	40	31
++34	CS 6675	AISA	45.5%	74.2%	22.0%	37	37	27	38
+35	CS 6264	SND	69.7%	74.8%	24.8%	24	41	42	49
+36	CS 7638	AI4R	51.9%	69.0%	21.3%	39	8	32	36
+37	CS 6340	SAT	43.4%	68.0%	24.3%	42	6	29	26
+Tier 5 (Hard, or at least harder than you think)
+Rank	Course Number	AKA	A%	A-B%	W%	Grades Rank	Rating	Difficulty	Workload
+
+38	CS 7637	KBAI	46.2%	69.5%	20.2%	41	45	26	43
+39	CSE 6250	BD4H	56.1%	75.3%	17.4%	36	29	42	53
+40	CS 6400	DBS	30.4%	71.5%	14.5%	43	56	30	22
++41	ISYE 6525	HDDA	62.7%	75.8%	20.2%	29	12	63	52
+42	CS 7646	ML4T	45.6%	63.1%	24.4%	48	31	28	37
++43	CS 6238	SCS	31.0%	73.5%	18.4%	40	51	48	47
+44	CS 7400	QC	42.2%	60.8%	32.8%	49	28	45	28
+45	ISYE 6420	Bayes	41.9%	63.9%	26.9%	45	52	46	32
+*46	CS 8803 O23	MIRM	60.0%	60.0%	10.0%	54	N/A	N/A	N/A
++47	CS 7643	DL	48.9%	72.8%	20.3%	38	23	59	56
+Tier 6 (Take these alone)
+Rank	Course Number	AKA	A%	A-B%	W%	Grades Rank	Rating	Difficulty	Workload
+
+48	ISYE 6402	TSA	33.6%	67.0%	22.9%	44	57	52	46
+49	CS 6290	HPCA	35.3%	58.7%	28.4%	55	13	44	45
+50	CS 6515	GA	29.0%	69.7%	14.4%	47	48	51	48
+51	CS 6200	GIOS	41.4%	57.6%	37.3%	52	10	50	51
+52	CS 6263	CPSS	31.6%	52.3%	39.3%	61	54	37	44
+$53	CS 6601	AI	41.8%	63.6%	27.1%	46	20	55	57
+54	ISYE 6669	DO	24.2%	64.0%	14.3%	57	47	55	29
+$55	CS 6260	AC	25.5%	67.5%	20.9%	50	55	54	54
+56	CS 6210	AOS	34.9%	54.2%	35.5%	58	27	57	50
+$57	CS 6265	BE	40.6%	56.3%	32.1%	56	1	53	63
+58	CS 6291	ESO	31.3%	43.3%	44.5%	65	50	41	41
+59	CS 7642	RL	38.5%	58.5%	32.2%	53	18	62	60
+60	CS 7641	ML	40.7%	58.3%	36.1%	51	53	58	61
+Tier 7 (Tell your Loved Ones goodbye)
+Rank	Course Number	AKA	A%	A-B%	W%	Grades Rank	Rating	Difficulty	Workload
+
+61	CSE 6220	IHPC	35.7%	51.8%	37.1%	62	25	60	55
+**62	CS 6211	SDCC	34.9%	54.2%	35.5%	58	2	65	64
+63	CS 6476	CV	36.5%	50.8%	33.9%	63	41	61	62
+64	CS 7210	DC	32.6%	56.%	30.9%	60	24	66	65
+65	CS 6475	CP	23.5%	43.9%	39.9%	66	46	49	58
+66	CS 8803 O08	Compiler	30.9%	47.6%	37.2%	64	4	64	66
+Notes:
+
+* – DHE, i2R, and MIRM currently have no reviews. For overall ranking, a median of (3.467, 2.975, 13.606) was used as a placeholder for (rating, difficulty, workload). The N/A’s occupy the middle of the ranking at 33, 34, and 35, so 1 is still the easiest and 66 is still the hardest for the other courses. MIRM in particular has only had 10 students take it at the time of this list's creation, so take this placement with a grain of salt.
+
+** - SDCC has the distinction of being the only course on the list with both an enforced pre-requisite (A in AOS) and a pass/fail grading structure. The usual approach doesn't rank this course accurately, so for ranking purposes I decided to give it the same grades profile as its pre-requisite, AOS. The students who have taken it generally rate it as harder than AOS, so it lands in Tier 7.
+
++ - Course has a Spring on-campus offering with the same professor and thus only Fall grades are considered
+
+$ - Course has a Fall on-campus offering with the same professor and thus only Spring grades are considered
+
+Archived post. New comments cannot be posted and votes cannot be cast.
+Share
+squarespace
+•
+Promoted
+Build it to sell. With Squarespace.
+Sign Up
+ad.doubleclick.net
+Sort by:
+SoWereDoingThis
+•
+1y ago
+
+All of this is subject to massive selection bias. Someone should do a “same rater” ranking based approach.
+
+Stagef6
+•
+1y ago
+
+Same rater would be ideal for smoothing review selection bias. I've attempted the same rater approach with omscentral's reviewer codes, but there aren't enough labeled reviews to get a consistent ranking. Maybe in a year or two there will be enough there for this type of analysis.
+
+[deleted]
+•
+1y ago
+1 more reply
+Dangerous_Guava_6756
+•
+1y ago
+
+Here’s a question. I know these ratings are somewhat subjective and depend on the person taking them and their life yada yada yada.
+
+But, what would you all put as the recommended highest tier to do during a summer?
+
+What would you put as the highest two tiers to do as two classes at once?
+
+Obviously there will be variation but there must be hard and soft limits on what tier someone should do in a summer and what 2 tiers someone should or shouldn’t double up on in a term.
+
+Like 2 tier 6’s in one term while working full time would maybe not be advised! So what’s the right advice?
+
+Summer? 2 at the same time?
+
+Stagef6
+•
+1y ago
+•
+Edited 1y ago
+
+I guess to a random student I know nothing about I wouldn't recommend anything harder than pairing a tier 6 and a tier 4 in a long semester or two tier 4's in the summer.
+
+But honestly, I don't believe it's possible to assign hard rules when everyone comes in with different levels of experience and abilities. There are students here who are much smarter/more experienced/better looking than me who can take on a full time job with Tier 6+7 workloads I wouldn't find manageable, but it works for them. On the flipside there are students who find lighter workloads to be a better match for their pace/experience/lifestyle. To me, this list is less about absolute rules and more about creating the smoothest possible plan given your goals for what classes you want to take and how quickly you want to complete the program.
+
+My vague sequencing advice for some different plans, assuming a flat workload outside of OMSCS:
+
+Spring/Fall Courses	Summer Courses	Course Plan Tiers	Sequence Advice
+
+1	1	Any	Take the easiest classes in the summer. Don't take the hardest classes in first semester.
+2	1	Plan contains multiple Tier 4 and lower courses	Pair a harder class with an easier class in Spring/Fall. Take middle difficulty classes in the Summer.
+2	1	Plan contains 9 or 10 Tier 5+ courses	Take the hardest courses in the Summer. Balance difficulties of remaining courses in Fall/Spring
+
+By the time you're taking 3 classes or 2 summer classes I assume you already know what works for you.
+
+3 more replies
+Strong-Situation8160
+•
+1y ago
+
+Do you have tier for ISYE 6525?
+
+Stagef6
+•
+1y ago
+
+It was still under ISYE 8803 on this list (it only recently changed to ISYE 6525).
+
+I just updated it to say 6525. It's position 41 in Tier 5.
+
+FredCole918
+•
+1y ago
+
+Classes with group projects should be in a special category.
+
+[deleted]
+•
+1y ago
+•
+Edited 1y ago
+
+Oh great most of the courses I’m interested in are tier 6 and 7
+
+I have a note about CS6400. The material in this class was not difficult. It was made difficult for three reasons:
+
+Most of the grade is based on project work, so a lot depends on lucking out with good teammates.
+
+It really feels like there are a lot of bad TA’s for this class (definitely some good too, but plenty of bad). We would get feedback on our projects and be docked 15% for a few small errors. The grading scheme did not seem to be lined up properly with what one might consider a demonstration of mastery of the material. Additionally, there were plenty of poorly written test questions that were basically reliant on you correctly guessing what they were getting at. This had been pointed out multiple times and the response from the TA team was basically “sucks.” I’d give the TA’s a 2/5 for this course. I liked the lead instructor and the materials, but it felt so much like the TA’s were going out of their way to inappropriately deflate grades.
+
+You’re graded on things that have nothing to do with this course. We did terribly on the final project because our UI wasn’t finished (sure, that’s on us), but this course has nothing to do with building UI’s. We had to spend a ton of time learning how to do that.
+
+For context, I’ve worked as a data engineer/backend engineer for 6 years and was basically the SQL expert in every team I’ve been on, and I got a B, even having basically known all the material beforehand (if you’re wondering why I took the course, that’s a different story…).
+
+Fk that class.
+
+Edit: forgot to point out-they’d ask you to incorporate changes from previous phases into the next phase of your project, but wouldn’t release comments until the week before the next phase was due.
+
+[deleted]
+•
+1y ago
+
+I graduated this fall and was with the program for 4 years, I must say the newer classes like NLP were a delight, but what surprised me is the amount of fun I had taking CS7641 this fall. Don't get me wrong, it is still a lot of work, but there has been some very positive improvements made in that course to improve the learning experience.
+
+[deleted]
+•
+1y ago
+•
+Edited 1y ago
+
+Honestly, 59 hours average workload for entry level? I also read a review that assessed GA at 80 hours per week: that is 2 (two) full-time jobs for one course. Ppl know how many hours there are in a week, right?
+
+Edit: oh I see now that workload is also ranked. Then it is still strange that 7 is together with 59.
+
+2 more replies
+EchoOk8333
+•
+1y ago
+
+I think IHPC should be tier 6. I took it during the Summer and had no background in algorithms. I am also an average student. I found the workload comparable to GIOS or AI
+
+u/sophialearning
+•
+Promoted
+“One-size-fits-all” never fits anyone. With Sophia Learning, homeschool students can take the first step in their higher education journey with an accessible, flexible, and supportive partner. Get started today!
+Sign Up
+sophia.org
+random_aer
+•
+1y ago
+
+Not sure about DL and ML4T in the same tier. ML4T is a entry/medium level class based on my experience
+
+honey1337
+•
+1y ago
+
+Could be because there are a lot of people who take ML4T with a not great background for the program in general, but they think they will do well because everyone recommends it as a first class. DL on the other hand is not recommended as a first class and is recommended after ML.
+
+random_aer
+•
+1y ago
+
+Could be. I’m just saying I’ve taken both and ML4T felt a lot easier.
+
+7 more replies
+Longjumping-End-3017
+•
+1y ago
+
+Starting my first semester with GIOS, planning to spend at least 20 hours per week. Wish me luck.
+
+GTA_Trevor
+•
+1y ago
+
+It is a lot of work, but just start the assignments early. It's honestly not that bad, I had just about every weekend free to do my own thing and I took GIOS while working full time.
+
+alexistats
+•
+1y ago
+
+Good luck! I started with AI which has a similar difficulty profile according to this list. Consistency is key.
+
+That said, I noticed that sometimes life gets in the way, so I found day to day consistency really hard, but week to week is super manageable. For example, 2 hrs each weekday wasn't always doable, but I could catch up on my weekend or on another weekday.
+
+6 more replies
+6 more replies
+awp_throwaway
+•
+1y ago
+•
+Edited 1y ago
+
+That information was compared to review data from OMSHub
+
+Hopefully it wasn't too tedious to pull the data...
+
+It's been on our backlog for a while to make the data easier to pull/aggregate (i.e., via exported JSON or similar), but currently the other core dev and I are pretty slammed between work and school, unfortunately. But we're also both at the tail end of OMSCS, finally, so hopefully we can improve that part sooner than later...
+
+Ultimately, Spring '25 GA will be the arbiter in declaring freedom vs. non-freedom in my own case (tenth/final course for me) 😬
+
+u/Michelob-ULTRA
+•
+Promoted
+Stay in the game with Michelob ULTRA Zero. Official Beer Sponsor of The FIFA World Cup 26™
+Order Now
+doordash.com
+Collapse video player
+scoretoris
+•
+1y ago
+
+Thanks for putting this together, OP! It's nice to all of these courses listed together for reference.
+
+Just my two cents for the folks reading the comments: ISYE 6501 was waaaaaaay easier than DVA. No way DVA should be considered easier. 6501 was a breeze.
+
+locallygrownlychee
+•
+1y ago
+
+Just wanna say thanks this is a great resource!!
+
+HumbleJiraiya
+•
+1y ago
+
+I am so glad to see CV at the end. This is my 1st semester and I am taking it.
+
+One of the biggest reason I chose OMSCS was to get challenged & come out upgraded. CV is a step towards that.
+
+5 more replies
+Material_Tap_420
+•
+1y ago
+
+Thanks for putting this together. If you get a high B in AOS, it is enough for SDCC. I got the invitation for 85% overall score.
+
+1 more reply
+-OMSCS-
+•
+1y ago
+
+Should only consider GA on and after Summer 2024 since they remove the optional finals AND introduce OSI-induced coding assignments.
+
+Just look at the sharp decline of %A.
+
+Any class whose semesters have below 20-25% needs to be automatically looked at for being masochistic.
+
+3 more replies
+New to Reddit?
+
+Create your account and connect with a world of communities.
+
+Continue with Email
+Continue with Phone Number
+By continuing, you agree to our User Agreement and acknowledge that you understand the Privacy Policy.
+People also ask about section
+People also ask about
+Ranking of OMSCS courses by difficulty
+Electives in OMSCS program
+Not knowing what to expect made this program challenging for me initially
+r/OMSCS
+•
+5d ago
+Not knowing what to expect made this program challenging for me initially
+59 upvotes · 24 comments
+HomeDepot
+•
+Promoted
+Fast, free delivery keeps your backyard setup on track long before kickoff. Get ahead of your to-do list so match day feels easy, not rushed. With over 2 million items qualifying, you can focus on your setup while The Home Depot handles the rest.​
+homedepot.com
+Learn More
+Course & Specs Megathread - Selection, Choices & Registration
+r/OMSCS
+•
+5mo ago
+Course & Specs Megathread - Selection, Choices & Registration
+23 upvotes · 487 comments
+Course quantity per semester
+r/OMSCS
+•
+23d ago
+Course quantity per semester
+26 comments
+This program is only worthwhile for the paper at the end
+r/OMSCS
+•
+7mo ago
+This program is only worthwhile for the paper at the end
+198 upvotes · 109 comments
+Congratulations! Another semester is over!
+r/OMSCS
+•
+6mo ago
+Congratulations! Another semester is over!
+292 upvotes · 33 comments
+I got out - finished the program after about 3 years
+r/OMSCS
+•
+6mo ago
+I got out - finished the program after about 3 years
+134 upvotes · 53 comments
+Pushing through last few weeks of last course
+r/OMSCS
+•
+2mo ago
+Pushing through last few weeks of last course
+22 upvotes · 24 comments
+After 15 terms, 12 completed courses, and a few bumps along the way, I'm out.
+r/OMSCS
+•
+6mo ago
+After 15 terms, 12 completed courses, and a few bumps along the way, I'm out.
+115 upvotes · 18 comments
+With all the doom & gloom, let me remind you that...
+r/OMSCS
+•
+1mo ago
+With all the doom & gloom, let me remind you that...
+99 upvotes · 16 comments
+Still exploring if the program is worth it - any insight is welcome
+r/OMSCS
+•
+1mo ago
+Still exploring if the program is worth it - any insight is welcome
+15 upvotes · 22 comments
+alumni, where are you at now?
+r/OMSCS
+•
+3mo ago
+alumni, where are you at now?
+81 upvotes · 68 comments
+[Profile Review] Review for MIS summer/fall 2025 intake
+r/gradadmissions
+•
+1y ago
+[Profile Review] Review for MIS summer/fall 2025 intake
+Tired and overwhelmed in my first course
+r/OMSCS
+•
+3mo ago
+Tired and overwhelmed in my first course
+50 upvotes · 25 comments
+AFRC 2023-2024 Selection Analysis
+r/airforceots
+•
+2y ago
+AFRC 2023-2024 Selection Analysis
+3
+21 upvotes · 1 comment
+A Thought on the Program and Changes to Course Workload
+r/OMSCS
+•
+3mo ago
+A Thought on the Program and Changes to Course Workload
+86 upvotes · 87 comments
+[University Review] Please Give a Detailed Review of my MSCS University List for Fall 2026
+r/MSCS
+•
+1y ago
+[University Review] Please Give a Detailed Review of my MSCS University List for Fall 2026
+14 comments
+I got out with straight As! Finally!
+r/OMSCS
+•
+22d ago
+I got out with straight As! Finally!
+160 upvotes · 32 comments
+[University Review] Please Give a Detailed Review of my MSCS University List for Fall 2026
+r/gradadmissions
+•
+1y ago
+[University Review] Please Give a Detailed Review of my MSCS University List for Fall 2026
+Me, every semester, finding the guy responsible for signing me up for a hard AF course:
+r/OMSCS
+•
+6mo ago
+Me, every semester, finding the guy responsible for signing me up for a hard AF course:
+112 upvotes · 20 comments
+I Got Out : Reflecting on my (Long) Journey
+r/OMSCS
+•
+6mo ago
+I Got Out : Reflecting on my (Long) Journey
+self
+148 upvotes · 50 comments
+Spring 2025 Research Opportunities (8903s)
+r/OMSCS
+•
+1y ago
+Spring 2025 Research Opportunities (8903s)
+86 upvotes · 41 comments
+I got in but does it mean I am really in?
+r/OMSCS
+•
+5mo ago
+I got in but does it mean I am really in?
+8 upvotes · 35 comments
+List of all chapters and sub chapters for following subjects (exams in Jan-Feb 2025)
+r/igcse
+•
+2y ago
+List of all chapters and sub chapters for following subjects (exams in Jan-Feb 2025)
+1 upvote · 2 comments
+Only 30 more days left to go...
+r/OMSCS
+•
+7mo ago
+Only 30 more days left to go...
+135 upvotes · 24 comments
+Is this program even worth it anymore, as a career switcher?
+r/OMSCS
+•
+6mo ago
+Is this program even worth it anymore, as a career switcher?
+95 upvotes · 84 comments
+VIEW POST IN
+Français
+繁體中文
+简体中文
+हिन्दी
+Tiếng Việt
+See more
+Public
+TOP POSTS
+Reddit
+reReddit: Top posts of January 3, 2025
+Reddit
+reReddit: Top posts of January 2025
+Reddit
+reReddit: Top posts of 2025
+Reddit Rules
+Privacy Policy
+User Agreement
+Your Privacy Choices
+Accessibility
+Reddit, Inc. © 2026. All rights reserved.
+Collapse Navigation
+RESOURCES
+About Reddit
+Advertise
+Developer Platform
+Reddit Pro
+BETA
+Help
+Blog
+Careers
+Press
+Best of Reddit
+Reddit Rules
+Privacy Policy
+User Agreement
+Your Privacy Choices
+Accessibility
+Reddit, Inc. © 2026. All rights reserved.

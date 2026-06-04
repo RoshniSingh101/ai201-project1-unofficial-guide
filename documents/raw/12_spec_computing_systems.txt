@@ -1,0 +1,368 @@
+SOURCE: Specialization in Computing Systems
+URL: https://omscs.gatech.edu/specialization-computing-systems
+============================================================
+
+Specialization in Computing Systems | Online Master of Science in Computer Science (OMSCS)
+
+						Skip to main navigation
+
+						Skip to main content
+
+MENU
+
+              Online Master of Science in Computer Science (OMSCS)
+
+              College of Computing
+
+Main navigation
+
+About
+
+About OMSCS
+
+Annual Report
+
+2025 Annual Report
+
+2024 Annual Report
+
+10th Anniversary
+
+OMSCS FAQs
+
+Prospective Students
+
+Admission Criteria
+
+Application
+
+Apply
+
+Deadlines, Decisions, Requirements, and Guidelines
+
+Additional Application Guidelines
+
+Technical Requirements
+
+Cost and Payment Schedule
+
+Preparing Yourself for OMSCS
+
+Prospective Student FAQs
+
+Academics
+
+Degree Requirements
+
+Courses
+
+Current Courses
+
+Seminars
+
+Course Offering History
+
+Specializations
+
+Research Opportunities
+
+OMSCS Open Courseware
+
+Student Life
+
+OMSCS Conference
+
+About the Conference
+
+Registration
+
+Call for Proposals
+
+Program
+
+Keynote
+
+Travel and Accommodations
+
+Sponsorship
+
+Meet the Chairs
+
+FAQ
+
+2025 Recap
+
+Past Conferences
+
+Media
+
+All News and Stories
+
+By Category
+
+Program News
+
+In The Press
+
+OMSCS Research
+
+OMSCS Buzz Podcast
+
+OMSCS Speaker Series
+
+People
+
+Directory
+
+Faculty
+
+Staff
+
+Contact Us
+
+Search
+
+Search
+
+Specialization in Computing Systems
+
+For a Master of Science in Computer Science, Specialization in Computing Systems (18 hours), students must select from the following:
+*
+The following is a complete look at the courses that may be selected to fulfill the Computing Systems specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program
+.
+Core Courses (9 hours)
+CS 6505 Computability, Algorithms, and Complexity
+or
+CS 6515 Introduction to Graduate Algorithms
+And, pick two (2) of:
+CS 6210 Advanced Operating Systems
+CS 6241 Compiler Design
+CS 6250 Computer Networks
+CS 6290 High-Performance Computer Architecture
+CS 6300 Software Development Process
+
+or CS 6301 Advanced Topics in Software Engineering
+CS 6390 Programming Languages
+CS 6400 Database Systems Concepts and Design
+Any Core Courses in excess of the 9 hour requirement may be used as Computing Systems Electives
+
+Electives (9 hours)
+Pick three (3) courses from:
+CS 6035 Introduction to Information Security
+CS 6200 Graduate Introduction to Operating Systems​
+CS 6220 Big Data Systems and Analytics
+CS 6235 Real Time Systems
+CS 6238 Secure Computer Systems
+CS 6260 Applied Cryptography
+CS 6262 Network Security
+CS 6263 Intro to Cyber Physical Systems Security
+CS 6291 Embedded Systems Optimization​
+CS 6310 Software Architecture and Design
+CS 6340 Software Analysis and Testing
+CS 6365 Introduction to Enterprise Computing
+CS 6422 Database System Implementation
+CS 6550 Design and Analysis of Algorithms
+CS 6675 Advanced Internet Computing Systems and Applications
+CS 7210 Distributed Computing
+CS 7260 Internetworking Architectures and Protocols
+CS 7270 Networked Applications and Services
+CS 7280 Network Science
+CS 7290 Advanced Topics in Microarchitecture
+CS 7292 Reliability and Security in Computer Architecture
+CS 7295 GPU Hardware and Software
+CS 7560 Theory of Cryptography
+CS 8803-FPL Special Topics: Foundations of Programming Languages
+CSE 6220 High-Performance Computing
+Any Special Topics (CS 8803) course that is being taught by a School of Computer Science faculty member may also count as a Computing Systems elective. The definition of "School of Computer Science faculty member" is a faculty member who appears on the School of Computer Science website:
+https://scs.gatech.edu/people/faculty
+. The current applicable OMSCS courses are:
+CS 6211: System Design for Cloud Computing (formerly CS 8803 O12)
+CS 6264: Information Security Lab - System and Network Defenses (formerly CS 8803 O11)
+CS 7400: Quantum Computing (formerly CS 8803 O13)
+CS 8803-O08: Compilers - Theory and Practice
+
+Free Electives (12 hours)
+Free electives may be any courses offered through the OMSCS program. You can find the list of current OMSCS courses
+here
+.
+
+Resources
+
+Georgia Tech Resources
+
+Offices and Departments
+
+News Center
+
+Campus Calendar
+
+Special Events
+
+GreenBuzz
+
+Institute Communications
+
+Visitor Resources
+
+Campus Visits
+
+Directions to Campus
+
+Visitor Parking Information
+
+GT visitor Wireless Network Information
+
+Georgia Tech Global Learning Center
+
+Georgia Tech Hotel and Conference Center
+
+Barnes and Noble at Georgia Tech
+
+Ferst Center for the Arts
+
+Robert C. Williams Paper Museum
+
+Colleges, Instructional Sites and Research
+
+Colleges
+
+College of Computing
+
+College of Design
+
+College of Engineering
+
+College of Lifetime Learning
+
+College of Sciences
+
+Ivan Allen College of Liberal Arts
+
+Scheller College of Business
+
+Instructional Sites
+
+Georgia Tech-Europe
+
+Georgia Tech-Shenzhen
+
+Georgia Tech Online
+
+Professional Education
+
+The Language Institute
+
+Global Footprint
+
+Global Engagement
+
+Research
+
+Research at Georgia Tech
+
+Georgia Tech Research Institute
+
+Commercialization
+
+Enterprise Innovation Institute
+
+Corporate Engagement
+
+College of Computing Resources Menu
+
+College of Computing Resources
+
+Intranet
+
+Student and Parent Resources
+
+Student Resources
+
+Apply
+
+BuzzPort
+
+Buzzcard
+
+Career Center
+
+Commencement
+
+Graduate and Postdoctoral Education
+
+Undergraduate Education
+
+Library
+
+Student Life
+
+Student Entrepreneurship
+
+Education Abroad
+
+Canvas
+
+Parent Resources
+
+Parent and Family Programs
+
+Division of Student Life
+
+Scholarships and Financial Aid
+
+News Feed
+
+Microsoft's MDASH AI Vulnerability Scanner Finds Four Critical Windows RCEs
+
+Georgia Tech Faculty and Researchers Recognized With 2026 Regents’ Awards
+
+Georgia Tech Builds Network Sandbox to Test Hospital Cyber Defenses
+
+College of Computing
+
+Georgia Institute of Technology
+
+    North Avenue
+
+Atlanta, GA 30332
+
+          404.894.2000
+
+College of Computing Map
+
+General
+
+Directory
+
+Employment
+
+Emergency Information
+
+Legal
+
+Equal Opportunity, Nondiscrimination, and Anti-Harassment Policy
+
+Legal & Privacy Information
+
+Human Trafficking Notice
+
+Title IX/Sexual Misconduct
+
+Hazing Public Disclosures
+
+Accessibility
+
+Accountability
+
+Accreditation
+
+Report Free Speech and Censorship Concern
+
+© 2026 Georgia Institute of
+      Technology
+
+GT LOGIN
+
+GT LOGIN
