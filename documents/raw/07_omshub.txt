@@ -1,0 +1,1298 @@
+SOURCE: OMSHub
+URL: https://www.omshub.org
+============================================================
+
+OMSHub
+
+Recents
+Schedule
+About
+Search courses...
+⌘
+K
+Sign In
+GEORGIA TECH OMS PROGRAMS
+Course Reviews & Ratings
+
+Community-driven reviews to help you make informed decisions about your Online Master's courses
+
+111
+
+COURSES
+
+6,574
+
+REVIEWS
+
+1,435,027
+
+HOURS SUFFERED
+
+Search Courses
+
+Press Ctrl+K to search
+
+All Courses
+
+111 courses available across all OMS programs
+
+Clear saved table settings
+
+Course
+
+Difficulty
+
+Workload
+
+Rating
+
+Reviews
+
+Advanced Hardware Oriented Security and Trust
+ECE-8873
+
+-
+
+-
+
+-
+
+0
+
+Advanced Internet Systems and Applications
+CS-6675
+
+MEDIUM
+
+14h/wk
+
+3.0
+
+6
+
+Advanced Malware Analysis
+CS-6747
+
+MEDIUM
+
+16h/wk
+
+4.6
+
+7
+
+Advanced Operating Systems
+CS-6210
+
+HARD
+
+19h/wk
+
+4.1
+
+85
+
+AI, Ethics, and Society
+CS-6603
+
+EASY
+
+6h/wk
+
+2.6
+
+58
+
+Applied Analytics Practicum
+MGT-6748
+
+EASY
+
+14h/wk
+
+4.3
+
+4
+
+Applied Cryptography
+CS-6260
+
+MEDIUM
+
+17h/wk
+
+3.5
+
+39
+
+Applied Natural Language Processing
+CSE-8803
+
+-
+
+-
+
+-
+
+0
+
+Artificial Intelligence
+CS-6601
+
+HARD
+
+23h/wk
+
+4.1
+
+244
+
+Bayesian Statistics
+ISYE-6420
+
+MEDIUM
+
+12h/wk
+
+2.8
+
+63
+
+Big Data for Health Informatics
+CSE-6250
+
+HARD
+
+28h/wk
+
+3.7
+
+62
+
+Business Fundamentals for Analytics
+MGT-8803
+
+MEDIUM
+
+8h/wk
+
+2.5
+
+87
+
+Challenge of Terrorism in Democratic Societies
+INTA-8803G
+
+-
+
+-
+
+-
+
+0
+
+Compilers - Theory and Practice
+CS-8803-O08
+
+HARD
+
+31h/wk
+
+4.1
+
+18
+
+Computational Aspects of Cyber Physical Systems
+ECE-6150
+
+-
+
+-
+
+-
+
+0
+
+Computational Aspects of Cyber Physical Systems
+ECE-8803A
+
+-
+
+-
+
+-
+
+0
+
+Computational Data Analysis: Learning, Mining, and Computation
+ISYE-6740
+
+MEDIUM
+
+15h/wk
+
+4.0
+
+37
+
+Computational Photography
+CS-6475
+
+MEDIUM
+
+18h/wk
+
+3.6
+
+153
+
+Computational Science and Engineering Algorithms
+CSE-6140
+
+-
+
+-
+
+-
+
+0
+
+Computational Statistics
+ISYE-6416
+
+MEDIUM
+
+12h/wk
+
+3.0
+
+1
+
+Computer Animation
+CS-7496
+
+EASY
+
+6h/wk
+
+4.5
+
+2
+
+Computer Graphics in the AI Era
+CS-8803-O27
+
+-
+
+-
+
+-
+
+0
+
+Computer Networks
+CS-6250
+
+EASY
+
+10h/wk
+
+3.5
+
+333
+
+Computer Vision
+CS-6476
+
+HARD
+
+22h/wk
+
+3.8
+
+162
+
+Computing for Data Analysis: Methods and Tools
+CSE-6040
+
+MEDIUM
+
+10h/wk
+
+4.3
+
+115
+
+Computing for Good
+CS-6150
+
+EASY
+
+9h/wk
+
+2.5
+
+2
+
+Cyber Physical Design
+ECE-8823
+
+-
+
+-
+
+-
+
+0
+
+Cyber-Physical Design and Analysis
+CS-7639
+
+MEDIUM
+
+12h/wk
+
+2.9
+
+33
+
+Cybersecurity of Drones
+ECE-8803
+
+-
+
+-
+
+-
+
+0
+
+Cybersecurity of Drones
+CS-8803-O31
+
+-
+
+-
+
+-
+
+0
+
+Data Analytics & Security
+INTA-6450
+
+EASY
+
+3h/wk
+
+2.9
+
+21
+
+Data Analytics and Continuous Improvement
+MGT-8823
+
+EASY
+
+4h/wk
+
+3.6
+
+14
+
+Data Analytics in Business
+MGT-6203
+
+EASY
+
+6h/wk
+
+2.3
+
+114
+
+Data and Visual Analytics
+CSE-6242
+
+MEDIUM
+
+16h/wk
+
+3.0
+
+266
+
+Data Mining and Statistical Learning
+ISYE-7406
+
+EASY
+
+15h/wk
+
+3.6
+
+19
+
+Database System Implementation
+CS-6422
+
+EASY
+
+8h/wk
+
+3.0
+
+6
+
+Database Systems Concepts and Design
+CS-6400
+
+MEDIUM
+
+11h/wk
+
+2.6
+
+232
+
+Deep Learning
+CS-7643
+
+MEDIUM
+
+20h/wk
+
+4.0
+
+76
+
+Design and Analysis of Experiments
+ISYE-6413
+
+-
+
+-
+
+-
+
+0
+
+Deterministic Optimization
+ISYE-6669
+
+MEDIUM
+
+13h/wk
+
+3.8
+
+44
+
+Digital Health Equity
+CS-6435
+
+-
+
+-
+
+-
+
+0
+
+Digital Marketing
+MGT-6311
+
+EASY
+
+3h/wk
+
+4.3
+
+29
+
+Distributed Computing
+CS-7210
+
+HARD
+
+61h/wk
+
+3.0
+
+32
+
+Educational Technology
+CS-6460
+
+MEDIUM
+
+14h/wk
+
+4.0
+
+92
+
+Embedded Systems Optimization
+CS-6291
+
+MEDIUM
+
+16h/wk
+
+3.6
+
+35
+
+Financial Modeling
+MGT-8813
+
+EASY
+
+4h/wk
+
+3.1
+
+16
+
+Foundations of Computer Graphics
+CS-6491
+
+-
+
+-
+
+-
+
+0
+
+Game AI
+CS-7632
+
+MEDIUM
+
+12h/wk
+
+4.6
+
+21
+
+Geopolitics of Cybersecurity
+PUBP-8823
+
+EASY
+
+5h/wk
+
+5.0
+
+1
+
+Global Entrepreneurship
+CS-8803-O17
+
+EASY
+
+5h/wk
+
+2.0
+
+1
+
+GPU Hardware and Software
+CS-7295
+
+-
+
+-
+
+-
+
+0
+
+GPU Hardware and Software
+CS-8803-O21
+
+MEDIUM
+
+11h/wk
+
+4.0
+
+3
+
+Health Sensing and Interventions
+CS-8803-O29
+
+-
+
+-
+
+-
+
+0
+
+High Performance Computer Architecture
+CS-6290
+
+MEDIUM
+
+16h/wk
+
+3.9
+
+92
+
+High-Dimensional Data Analytics
+ISYE-8803
+
+HARD
+
+18h/wk
+
+4.2
+
+33
+
+Human-Computer Interaction
+CS-6750
+
+MEDIUM
+
+12h/wk
+
+4.1
+
+218
+
+Information and Communications Technology Policy
+PUBP-6502
+
+EASY
+
+2h/wk
+
+4.3
+
+3
+
+Information Policy and Management
+PUBP-6501
+
+MEDIUM
+
+10h/wk
+
+2.8
+
+8
+
+Information Security Lab
+CS-6265
+
+HARD
+
+30h/wk
+
+4.6
+
+21
+
+Information Security Lab - System and Network Defenses
+CS-6264
+
+MEDIUM
+
+17h/wk
+
+3.2
+
+5
+
+Information Security Policies
+PUBP-6725
+
+EASY
+
+6h/wk
+
+3.4
+
+18
+
+International Security
+INTA-6103
+
+EASY
+
+3h/wk
+
+3.3
+
+7
+
+Internet and Public Policy
+PUBP-6111
+
+EASY
+
+3h/wk
+
+4.0
+
+1
+
+Intro to Analytics Modeling
+ISYE-6501
+
+MEDIUM
+
+10h/wk
+
+4.1
+
+157
+
+Intro to Cyber Physical Systems Security
+CS-6263
+
+MEDIUM
+
+10h/wk
+
+3.4
+
+74
+
+Intro to Graduate Algorithms
+CS-6515
+
+HARD
+
+19h/wk
+
+3.5
+
+274
+
+Intro to Health Informatics
+CS-6440
+
+EASY
+
+11h/wk
+
+2.6
+
+84
+
+Intro to High-Performance Computing
+CSE-6220
+
+HARD
+
+20h/wk
+
+4.2
+
+71
+
+Intro to Research
+CS-8803-O24
+
+EASY
+
+5h/wk
+
+4.0
+
+1
+
+Introduction to Cognitive Science
+CS-6795
+
+EASY
+
+9h/wk
+
+3.6
+
+5
+
+Introduction to Computer Law
+CS-8803-O15
+
+-
+
+-
+
+-
+
+0
+
+Introduction to Cyber Physical Electric Energy Systems
+ECE-8803E
+
+HARD
+
+15h/wk
+
+2.0
+
+1
+
+Introduction to Cyber Physical Electric Energy Systems
+ECE-8853
+
+-
+
+-
+
+-
+
+0
+
+Introduction to Cyber Physical Systems Security
+ECE-8813
+
+-
+
+-
+
+-
+
+0
+
+Introduction to Information Security
+CS-6035
+
+MEDIUM
+
+11h/wk
+
+3.5
+
+409
+
+Introduction to Operating Systems
+CS-6200
+
+MEDIUM
+
+18h/wk
+
+4.4
+
+266
+
+Knowledge-Based Artificial Intelligence - Cognitive Systems
+CS-7637
+
+MEDIUM
+
+14h/wk
+
+3.6
+
+230
+
+Machine Learning
+CS-7641
+
+HARD
+
+22h/wk
+
+3.2
+
+294
+
+Machine Learning for Trading
+CS-7646
+
+MEDIUM
+
+11h/wk
+
+4.1
+
+347
+
+Malware Analysis and Defense
+CS-8813
+
+-
+
+-
+
+-
+
+0
+
+Mobile & Ubiquitous Computing
+CS-7470
+
+MEDIUM
+
+7h/wk
+
+2.3
+
+3
+
+Modeling, Simulation, and Military Gaming
+CSE-6742
+
+EASY
+
+6h/wk
+
+3.8
+
+4
+
+Modern Internet Research Methods
+CS-8803-O23
+
+-
+
+-
+
+-
+
+0
+
+Natural Language Processing
+CS-7650
+
+EASY
+
+7h/wk
+
+2.9
+
+7
+
+Network Science
+CS-7280
+
+MEDIUM
+
+13h/wk
+
+3.5
+
+31
+
+Network Security
+CS-6262
+
+MEDIUM
+
+13h/wk
+
+3.2
+
+128
+
+Nonparametric Data Analysis
+ISYE-6404
+
+-
+
+-
+
+-
+
+0
+
+Power System Protection
+ECE-6323
+
+-
+
+-
+
+-
+
+0
+
+Power Systems Control and Operation
+ECE-6320
+
+HARD
+
+10h/wk
+
+4.0
+
+1
+
+Principles of Smart Electricity Grids
+ECE-8863
+
+-
+
+-
+
+-
+
+0
+
+Privacy for Professionals
+MGT-6727
+
+EASY
+
+3h/wk
+
+4.2
+
+11
+
+Probabilistic Models and Their Applications
+ISYE-6650
+
+EASY
+
+5h/wk
+
+4.0
+
+1
+
+Quantum Computing
+CS-7400
+
+-
+
+-
+
+-
+
+0
+
+Quantum Hardware
+CS-8803-O20
+
+-
+
+-
+
+-
+
+0
+
+Regression Analysis
+ISYE-6414
+
+MEDIUM
+
+9h/wk
+
+3.2
+
+95
+
+Reinforcement Learning
+CS-7642
+
+HARD
+
+23h/wk
+
+3.9
+
+184
+
+Robotics: AI Techniques
+CS-7638
+
+MEDIUM
+
+14h/wk
+
+3.9
+
+241
+
+Scenario Writing and Path Gaming
+INTA-6014
+
+-
+
+-
+
+-
+
+0
+
+Secure Computer Systems
+CS-6238
+
+MEDIUM
+
+15h/wk
+
+3.0
+
+29
+
+Security Incident Response
+CS-6261
+
+-
+
+-
+
+-
+
+0
+
+Side-Channels and Their Role in Cybersecurity
+ECE-8843
+
+MEDIUM
+
+10h/wk
+
+5.0
+
+1
+
+Simulation and Modeling for Engineering and Science
+ISYE-6644
+
+MEDIUM
+
+11h/wk
+
+4.3
+
+102
+
+Smart Grids
+ECE-8803G
+
+-
+
+-
+
+-
+
+0
+
+Software Analysis
+CS-6340
+
+MEDIUM
+
+13h/wk
+
+3.5
+
+139
+
+Software Architecture and Design
+CS-6310
+
+EASY
+
+10h/wk
+
+3.1
+
+161
+
+Software Development Process
+CS-6300
+
+EASY
+
+9h/wk
+
+3.6
+
+237
+
+System Design for Cloud Computing
+CS-6211
+
+-
+
+-
+
+-
+
+0
+
+Time Series Analysis
+ISYE-6402
+
+HARD
+
+15h/wk
+
+1.8
+
+32
+
+Topics on High-Dimensional Data Analytics
+ISYE-6525
+
+-
+
+-
+
+-
+
+0
+
+Video Game Design
+CS-6457
+
+EASY
+
+13h/wk
+
+4.3
+
+15
+
+Web Search and Text Mining
+CSE-6240
+
+-
+
+-
+
+-
+
+0
+
+OMSHub
+
+Community-driven course reviews for Georgia Tech's Online Master's programs. Helping students make informed decisions since 2022.
+
+COURSES
+
+All Courses
+Course Schedule
+Recent Reviews
+
+RESOURCES
+
+About OMSHub
+Privacy Policy
+
+COMMUNITY
+
+GitHub
+Discord
+Reddit
+Slack
+
+© 2026 OMSHub. Not affiliated with Georgia Tech.
+
+Made with
+
+by the OMSCS community
