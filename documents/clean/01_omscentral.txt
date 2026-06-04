@@ -1,0 +1,122 @@
+SOURCE: OMS Reviews (omscentral)
+URL: https://www.omscentral.com
+============================================================
+
+OMS Reviews
+Reviews
+OMSCS Notes
+# of Reviews
+Course
+Code(s)
+	Rating	Difficulty	Workload	Reviews
+
+Course name
+Machine Learning
+Reviews URL
+Reviews
+GATech URL
+GT Official
+	CS-7641
+	3.12	4.15	22.55	527
+
+Course name
+Introduction to Graduate Algorithms
+Reviews URL
+Reviews
+GATech URL
+GT Official
+	CS-6515
+	3.28	4.05	19.13	512
+
+Course name
+Computer Networks
+Reviews URL
+Reviews
+GATech URL
+GT Official
+OMSCSNotes URL
+Lecture Notes
+	CS-6250
+	3.47	2.42	8.91	507
+
+Course name
+Introduction to Information Security
+Reviews URL
+Reviews
+GATech URL
+GT Official
+OMSCSNotes URL
+Lecture Notes
+	CS-6035
+	3.43	2.57	10.70	493
+
+Course name
+Machine Learning for Trading
+Reviews URL
+Reviews
+GATech URL
+GT Official
+OMSCSNotes URL
+Lecture Notes
+	CS-7646
+	3.88	2.66	12.10	481
+
+Course name
+Graduate Introduction to Operating Systems
+Reviews URL
+Reviews
+GATech URL
+GT Official
+OMSCSNotes URL
+Lecture Notes
+	CS-6200
+	4.39	3.69	18.47	380
+
+Course name
+Software Development Process
+Reviews URL
+Reviews
+GATech URL
+GT Official
+	CS-6300
+	3.56	2.31	9.06	376
+
+Course name
+Knowledge-Based AI
+Reviews URL
+Reviews
+GATech URL
+GT Official
+	CS-7637
+	3.54	3.07	14.11	367
+
+Course name
+Artificial Intelligence Techniques for Robotics
+Reviews URL
+Reviews
+GATech URL
+GT Official
+OMSCSNotes URL
+Lecture Notes
+	CS-7638
+	3.97	3.00	12.92	337
+
+Course name
+Artificial Intelligence
+Reviews URL
+Reviews
+GATech URL
+GT Official
+	CS-6601
+	4.03	4.07	22.32	322
+
+10
+25
+50
+1
+2
+3
+4
+5
+...
+14
