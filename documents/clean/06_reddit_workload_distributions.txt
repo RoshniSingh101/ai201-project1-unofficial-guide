@@ -1,0 +1,147 @@
+SOURCE: Workload Distributions
+URL: https://www.reddit.com/r/OMSCS/comments/1dd0snd/all_courses_workload_distributions_table/
+============================================================
+
+All Courses Workload Distributions Table : r/OMSCS
+Stagef6
+All Courses Workload Distributions Table
+Courses
+
+While the averages on OMSHub and OMSCSCentral will be a good estimate for most students, there are plenty of students who express they tend to take more or less time in courses. If you already have good experience with a course's material or you're just getting into a subject for the first time, the ends of a distribution can be more indicative of the time a course will require. Below is a table with distribution of workloads for each course. The data considered includes all unique reviews left on Hub and Central in the last 3 years (6/10/2021 - 6/9/2024). Table is sorted by from high to low primarily by Median, then Mean. "Count" is number of reviews. All other values are in hours/week.
+
+#	Course Code	AKA	Count	5th %	25th %	Median	75th %	95th %	Mean
+
+1	CS 7210	DC	17	6.6	25	30	30	84	34.5
+2	CS 8803 O08	Compiler	12	15.6	20	30	40	53.4	32.4
+3	CS 6476	CV	42	15.1	24.3	30	30	39.8	27.6
+4	CS 6475	CP	10	16.4	20	27.5	30	37.8	26.3
+5	CS 6211	SDCC	14	19.6	25	26.5	30	41.8	28.4
+6	CS 7642	RL	36	15	20	25	25	38.8	24.4
+7	CS 6265	BE	11	3	11.5	22	32.5	47.5	23.3
+8	CSE 6220	IHPC	37	10	15	20	22	66.8	24
+9	CS 7641	ML	122	10.1	18.3	20	30	40	23.4
+10	CS 6601	AI	74	12	15	20	25	30	22.5
+11	CS 7643	DL	66	12	16.5	20	25	30	20.3
+12	CS 6210	AOS	24	15	15	20	22.5	29.3	19.8
+13	CS 6200	GIOS	64	8	15	20	24	34.3	19.6
+14	ISYE 8803	HDDA	11	13	15	18	20	22.5	17.6
+15	CSE 6250	BD4H	14	8	12	15.5	25	54.5	23.4
+16	CS 6260	AC	20	7	12	15.5	20	52.5	21.5
+17	CS 6264	SND	3	15	15	15	22.5	28.5	20
+18	ISYE 6402	TSA	12	8.7	12.8	15	25	40	19.8
+19	CS 6515	GA	161	8	10	15	20	30	17.7
+20	CS 6238	SCS	19	7.8	12.5	15	20	26.5	17.2
+21	CSE 6242	DVA	64	8	12	15	20	30	17.1#	Course Code	AKA	Count	5th %	25th %	Median	75th %	95th %	Mean
+
+22	CS 7637	KBAI	89	8	12	15	18	25	16
+23	CS 7470	MUC	15	6	8.5	15	19	33	15.5
+24	CS 6263	CPSS	4	9.1	13.3	15	16.3	19.3	14.5
+25	ISYE 6420	Bayes	37	4.6	10	15	16	27	14.5
+26	CS 6747	AMRE	12	6	10	15	20	20	14.3
+27	CS 6675	AISA	12	8	10	14.5	15.3	21.8	14
+28	CS 6290	HPCA	25	6	10	14	16	20	15.7
+29	CS 7638	AI4R	60	8	10	14	17.3	24.3	15
+30	CS 6460	EdTech	12	7.8	11.5	14	15	19.5	13.4
+31	ISYE 6669	DO	21	8	10	12	15	25	16.5
+32	CS 6291	ESO	3	12	12	12	16	19.2	14.7
+33	CS 7646	ML4T	117	5.8	10	12	15	25	14.2
+34	CS 7280	NetSci	44	6.2	10	12	15.3	21.7	13.2
+35	CS 6750	HCI	77	5.6	9	12	15	26.8	12.8
+36	CS 6457	VGD	23	6.4	10	12	14.5	22.7	12.6
+37	CS 8803 O13	QC	17	8	10	12	15	20	12.6
+38	ISYE 6644	Sim	46	5.3	9.3	11	15	18.8	13.5
+39	CS 6400	DBS	72	5	10	11	15	20	12.3
+40	CS 7632	Game AI	39	5	10	10	13	20	11.6
+41	CS 6340	SAT	28	5	8.8	10	12	22.9	11.6
+42	CS 6262	NetSec	22	5.1	8	10	12	19.8	10.5#	Course Code	AKA	Count	5th %	25th %	Median	75th %	95th %	Mean
+
+43	CS 6035	IIS	86	5	7	10	10	20	9.8
+44	ISYE 6501	iAM	37	2.8	6	10	12	20	9.7
+45	CS 7639	CPDA	11	7	8	10	10	12	9.5
+46	CS 6300	SDP	56	2.8	7	10	12	15.8	9.3
+47	CS 6310	SAD	46	2	5	9.5	15	20	10.3
+48	CS 6250	CN	96	4	6	8.5	14.3	20	11.1
+49	CS 6150	C4G	2	8.1	8.3	8.5	8.8	9	8.5
+50	CS 6440	IHI	9	5	6	8	9	22.8	10.1
+51	CS 6795	ICS	12	3.6	5.8	8	10.5	16.4	8.8
+52	CS 8803 O21	GPU	1	8	8	8	8	8	8
+53	CS 7650	NLP	10	4	5	7	10	12.8	7.7
+54	CS 8803 O17	GE	6	2.8	5.3	7	8.8	9	6.5
+55	PUBP 8823	GCY	1	6	6	6	6	6	6
+56	CS 6603	AIES	88	1.4	3.8	5	8	14.7	6.4
+57	PUBP 6725	ISP	7	1.3	3	5	10	11.4	6.3
+58	CS 8803 O22	SIR	4	3.3	4.5	5	5.8	7.6	5.3
+59	INTA 6450	DAS	21	2	3	4	5	10	4.7
+60	CSE 6742	MSMG	3	1.3	2.5	4	5	5.8	3.7
+61	CS 8803 O15	Law	9	1.4	2	2	3	10.6	3.8
+62	MGT 6311	DM	22	1	2	2	4.5	7.9	3.2
+63	MGT 8813	FMX	7	1	1	2	2.5	3	1.9
+ALL	OMSCS	Courses	2142	4	10	14	20	30	15.5
+fidelityinvestments
+Stay close to the trade. With the all-new Fidelity Trader+™, you can access your preferred tools and charts consistently across all your devices.
+fidelity.com
+Collapse video player
+awp_throwaway
+Edited 2y ago
+
+Minor point, and largely inconsequential here, but FYI on OMSHub we label reviews ported from the old site with the "Legacy" tag, so there may be some duplication near the "start date" end of the indicated date range; the "non-legacy" (i.e., new/novel reviews added post-launch) started around mid-late Summer '22 onwards. Also, some folks post their reviews on both sites, so there may be some double-counting as such there, too. (EDIT: Missed the part "The data considered includes all unique reviews left on Hub and Central in the last 3 years" in first pass since my attention automatically got drawn towards the dates range, so my commentary here may be irrelevant, after all!).
+
+On a related aside, longer term, we are working on making the OMSHub data more easily accessible/downloadable (most likely a JSON dumped into Google Drive via daily cron job, or something along those lines) so that folks can perform ad hoc analyses and such as desired; it's on the roadmap, for the record, we're just lean/resource-constrained in terms of personnel on our end at the moment (it's mainly down to another core developer and myself at this point). Hoping to get some more feature development work in this summer before things get busier on my end again in the Fall-Spring stretch (though also hoping to be done with OMSCS by end of Spring, baring getting stymied at the finish line by GA); more on that to follow!
+
+Stagef6
+
+I scraped reviews from Central, then recorded unique reviews from Hub by hand (yes, it was a process), so there isn't any overlap (outside of manual errors on my part, which are hopefully few to none).
+
+Sounds awesome, looking forward seeing it!
+
+awp_throwaway
+
+then recorded unique reviews from Hub by hand
+
+Oof, sorry to hear that, hope to make it less tedious in the future!
+
+The general mission of OMSHub is to be a community-oriented project, so as far as we're concerned, we are not "primary custodians" of the data per se, but rather just an intermediary to generate/access the reviews. But this particular features was not a "deliberate omission," for the record, but rather simply a matter of resource constraints (Firebase is also kind of a pain in the ass to work with once you veer off the "happy path" a bit in terms of out-of-box features, so really I just need like a couple of dedicated/focused weekends trying to protype it out, and then get it into prod, hoping I can get around to it this summer finally)...
+
+coltt_45
+
+Would there be a way to modify this to be in only the past year or two? Since courses regularly change their difficulty and assignments
+
+Stagef6
+Edited 2y ago
+
+I played around with using a more recent cutoff in the data, because you're right that courses regularly change difficulty, and what I found was that generally the courses changing the most in this distribution were the courses with the fewest reviews. So then I tried adding a "most recent X reviews" restriction in addition to the 3 year cutoff, and for X=30, the largest shift I found was that AI's mean rose by 2 hours/week while it's median stayed the same. No means or medians changed by more than 2 hours/week. It turns out workload as a distribution isn't very volatile even when courses change over time. Which I think makes sense. It's rare a course undergoes a complete overhaul. Ratings are far more volatile (separate post coming on that later). In the end I left it as-is to preserve reviews on the less popular courses and avoid having to explain some sort of double-cutoff in the description.
+
+TLDR: Yes, and it wouldn't make the table any better.
+
+coltt_45
+
+Thank you!
+
+fabledparable
+Edited 2y ago
+
+Nice work! I can tell a lot of work went into this.
+
+I feel this is implied, but for folks who aren't familiar with OP's sources, "workload" is measured on the site(s) as "hours per week".
+
+While interesting (and potentially useful for folks), I'd have people bear in mind:
+
+The data doesn't capture/reflect changes in curriculum in the span of 3 years time. Courses can (and have) updated projects, grading schemas, changed instructors/TAs, etc. This allows for situations where - for example - a course's numbers may reflect what was the case in years 1 and 2, but after changing the curricula in year 3 the data points are more salient; this subtlety isn't captured here.
+
+What's also lost (and I feel lacking in the sources vs. being on OP) is the context of where the reviewer is at relative to their program experience. A student taking course X as their 10th course in the program may have been exposed to any number of related technologies, algorithms, have an established study methodology etc.; put simply, they are better prepared and may have a reduced workload relative to their peers. By contrast, a student taking the same course for their first semester could lack all of the above (and ergo have a more challenging time).
+
+As an extension of the above, the data also lacks identifying which program the reviewer is affiliated with. For example, we don't know if they're in OMSCS, OMSA, OMSCybersecurity, etc. This matters in some cases (for example, some Policy-track students in OMSCybersecurity have reported struggling with CS6035, despite it being reported in the data as having a relatively low workload).
+
+As far as I can tell, the data also clusters Summer semester data in with Fall/Spring semesters. For the uninitiated, Summer semesters are 4 weeks shorter than the other two; sometimes a course cuts content to compensate, others do not (and some aren't offered altogether). Understandably, the workload reported by a student going through a Summer semester is distinct from others.
+
+Finally, whether or not you find the number of reviewers for any given class as being statistically significant is variable. We might, for example, have more trust in the reports in classes where there are dozens of reviewers (conversely, less trust in those with single digits).
+
+Altogether though, this is nice!
+
+sciones
+
+Thank you for your hard work. This is very helpful.
+
+Crowdcontrolz
+
+Extremely useful. Thank you.
