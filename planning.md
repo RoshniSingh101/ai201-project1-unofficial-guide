@@ -10,7 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
-Student reviews for the OMSCS program at Georgia Tech. 
+Domain: Student reviews for the OMSCS program at Georgia Tech. The information is valuable because there is no one-stop shop for incoming and current OMS students to find information on selecting courses for the program. Instead of searching YouTube reviews, Reddit Threads, OMS Reviews, and OMSHub separately, we can access the materials through one RAG chatbot. 
 
 ---
 
@@ -44,11 +44,11 @@ Student reviews for the OMSCS program at Georgia Tech.
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:**
+**Chunk size:** 500 tokens
 
-**Overlap:**
+**Overlap:** 50 tokens
 
-**Reasoning:**
+**Reasoning:** Experimenting for now (multiples of 5 and 10)
 
 ---
 
@@ -60,11 +60,11 @@ Student reviews for the OMSCS program at Georgia Tech.
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
 
-**Embedding model:**
+**Embedding model:**  BAAI/bge-m3 from Hugging Face (Hybrid Chunking)
 
-**Top-k:**
+**Top-k:** 5
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** Accuracy and precision on keywords (course numbers and information) that reflect sentiment of OMSCS class reviews.
 
 ---
 
@@ -77,11 +77,11 @@ Student reviews for the OMSCS program at Georgia Tech.
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | Please give me a list of medium-level courses to take for the human-computer interaction specialization in fall/spring semesters. | CS 6750: Human-Computer Interaction |
+| 2 | Please give me a list of easy-level courses to take for computing systems. | CS 6250: Computer Networks, CS 6310: Software Architecture and Design, and CS 6422: Database System Implementation|
+| 3 | What are some of the hardest courses in the OMSCS program? | CSE 6620: Intro to High-Computing, CS 6211: System Design for Cloud Computing, CS 6476: Computer Vision, CS 7210: Distributed Computing, CS 6475: Computational Photography, CS 8803 O08: Compilers - Theory and Practice |
+| 4 | What are the core classes for the Computer Graphics specialization? | CS 6491: Foundations of Computer Graphics, CS 6457: Video Game Design, CS 7496: Computer Animation, CS 6505 Computability, Algorithms, and Complexity, CS 6515 Introduction to Graduate Algorithms. Please note that CS 6505 is only avaliable to students on-campus because the course is not bolded on the website.|
+| 5 | What are the elective options for Machine Learning? | CS 6220 Big Data Systems & Analysis, CS 6476 Computer Vision, CS 6603 AI, Ethics, and Society, CS 7280 Network Science, CS 7535 Markov Chain Monte Carlo, CS 7540 Spectral Algorithms, CS 7545 Machine Learning Theory, CS 7616 Pattern Recognition, CS 7626 Behavioral Imaging, CS 7642 Reinforcement Learning and Decision Making (Formerly CS 8803-O03), CS 7643 Deep Learning, CS 7644 Machine Learning for Robotics, CS 7646 Machine Learning for Trading, CS 7650 Natural Language, CS 8803 Special Topics: Probabilistic Graph Models, CSE 6240 Web Search and Text Mining, CSE 6242 Data and Visual Analytics, CSE 6250 Big Data for Health (Formerly CSE 8803), ISYE 6416 Computational Statistics, ISYE 6420 Bayesian Methods, ISYE 6664 Stochastic Optimization |
 
 ---
 
@@ -91,9 +91,8 @@ Student reviews for the OMSCS program at Georgia Tech.
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
-
-2.
+1. Inconsistency from reviews and documents
+2. Chunking that splits information mid-sentence without giving the whole picture. 
 
 ---
 
@@ -104,6 +103,9 @@ Student reviews for the OMSCS program at Georgia Tech.
      Label each stage with the tool or library you're using.
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
+
+![alt text](./documents/diagram.png)
+     
 
 ---
 
