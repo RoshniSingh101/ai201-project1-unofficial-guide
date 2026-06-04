@@ -4,7 +4,7 @@ URL: https://omscs.gatech.edu/specialization-computational-perception-and-roboti
 
 Specialization in Computational Perception and Robotics
 
-For a Master of Science in Computer Science, Specialization in Computational Perception and Robotics (15 hours), students must select from the following:
+For a Master of Science in Computer Science, Specialization in Computational Perception and Robotics (15 hours), students must selectfrom the following:
 
 *The following is a complete look at the courses that may be selected to fulfill the Computational Perception and Robotics specialization, regardless of campus; only courses listed with
 bold
@@ -12,7 +12,7 @@ bold
 
 Core Courses (6 hours)
 
-Algorithms: Pick one (1) of:
+Algorithms:Pick one (1) of:
 
 CS 6505 Computability, Algorithms, and Complexity
 

@@ -1,19 +1,25 @@
 #!/usr/bin/env python3
 """Structure-aware chunker for the cleaned OMSCS corpus.
 
-Chunking strategy (matches planning.md): target 500 tokens, 50-token overlap.
+Chunking strategy: target 200 tokens, 20-token overlap (override with --size /
+--overlap), packing whole *lines* so a course row is never split from its
+rating/tier.
 
-Why structure-aware rather than a blind sliding window:
-  * The corpus is list/table heavy (spec course lists, difficulty rankings,
-    capacity tables). Breaking mid-line would split a course row from its
-    rating/tier, which is exactly the info the eval questions need.
-  * Each specialization page is only ~230-550 tokens, so a whole spec's
-    requirements fits in one ~500-token chunk. We never split across files,
-    and small files become a single chunk.
+Hybrid mode (the default; disable with --no-hybrid) picks a strategy per
+document type, because one global size can't serve the whole corpus:
+  * Spec pages -> "atomic": the whole requirement list (and the "only bold =
+    offered online" caveat) stays in one chunk, so the specialization
+    questions always retrieve a complete, self-contained list.
+  * Difficulty/workload tables -> "sectioned": one tier per chunk, with the
+    tier label + column header repeated so each chunk is self-describing.
+  * Everything else (comments, prose, CSV sheets) -> "sliding": plain
+    overlapping window at the target size.
 
-So we pack whole *lines* (never broken) up to the token budget, carry ~50
-tokens of trailing lines into the next chunk as overlap, and prepend the
-SOURCE/URL as metadata so every chunk keeps its attribution.
+Each chunk carries its SOURCE/URL as metadata for attribution.
+
+Token counts here are ESTIMATED (~1.3 tokens/word) because the BGE-m3
+tokenizer isn't installed in this env; swap in the real tokenizer for
+production by replacing `est_tokens`.
 
 Token counts here are ESTIMATED (~1.3 tokens/word) because the BGE-m3
 tokenizer isn't installed in this env; swap in the real tokenizer for
@@ -28,8 +34,8 @@ from pathlib import Path
 
 CLEAN_DIR = Path(__file__).resolve().parent.parent / "documents" / "clean"
 
-CHUNK_TOKENS = 500
-OVERLAP_TOKENS = 50
+CHUNK_TOKENS = 200
+OVERLAP_TOKENS = 20
 TOKENS_PER_WORD = 1.3  # rough XLM-RoBERTa/BGE-m3 estimate for English
 
 
@@ -115,8 +121,38 @@ def table_context(body: list[str]) -> list[tuple[str, str]]:
     return ctx
 
 
-def pack(source: str, url: str, body: list[str]) -> list[Chunk]:
+MAX_ATOMIC_TOKENS = 800  # spec pages below this stay a single chunk
+
+
+def doc_mode(source: str, url: str) -> str:
+    """Pick a chunking strategy per document type (the 'hybrid' decision).
+
+    * "atomic"    – specialization pages: keep the whole requirement list (and
+                    the "only bold = offered online" caveat) in one chunk so
+                    Q1/Q4/Q5 always retrieve a complete, self-contained list.
+    * "sectioned" – ranking tables: cut on tier/section boundaries so each
+                    chunk is one self-describing tier (Q2/Q3).
+    * "sliding"   – everything else (comments, prose, CSV sheets): plain
+                    overlapping window.
+    """
+    if "omscs.gatech.edu" in url:
+        return "atomic"
+    if "Difficulty" in source or "Workload" in source:
+        return "sectioned"
+    return "sliding"
+
+
+def is_boundary(line: str) -> bool:
+    return bool(SECTION_RE.match(line.strip()))
+
+
+def pack(source: str, url: str, body: list[str], mode: str = "sliding") -> list[Chunk]:
     """Pack whole lines into ~CHUNK_TOKENS chunks with ~OVERLAP_TOKENS overlap.
+
+    `mode` (see doc_mode) tunes the boundary policy:
+      * atomic    – emit the whole doc as one chunk if it fits MAX_ATOMIC_TOKENS.
+      * sectioned – force a clean break at each tier/section boundary.
+      * sliding   – size-based breaks only.
 
     When a (non-first) chunk begins inside a table, the active section label and
     column header are re-prepended as a "(continued)" block so the rows below
@@ -129,6 +165,9 @@ def pack(source: str, url: str, body: list[str]) -> list[Chunk]:
         body.pop()
     if not body:
         return []
+
+    if mode == "atomic" and est_tokens("\n".join(body)) <= MAX_ATOMIC_TOKENS:
+        return [Chunk(source, url, "\n".join(body).strip())]
 
     ctx = table_context(body)
 
@@ -181,7 +220,12 @@ def pack(source: str, url: str, body: list[str]) -> list[Chunk]:
 
     for i, ln in enumerate(body):
         lt = est_tokens(ln) if ln.strip() else 0
-        if cur_tok + lt > CHUNK_TOKENS and cur_tok > OVERLAP_TOKENS:
+        # sectioned mode: start a fresh chunk at each tier/section boundary
+        if (mode == "sectioned" and is_boundary(ln)
+                and any(l.strip() for _, l in cur)):
+            emit()
+            cur, cur_tok = [], 0
+        elif cur_tok + lt > CHUNK_TOKENS and cur_tok > OVERLAP_TOKENS:
             flush()
         cur.append((i, ln))
         cur_tok += lt
@@ -189,10 +233,12 @@ def pack(source: str, url: str, body: list[str]) -> list[Chunk]:
     return chunks
 
 
-def chunk_corpus(clean_dir: Path = CLEAN_DIR) -> list[Chunk]:
+def chunk_corpus(clean_dir: Path = CLEAN_DIR, hybrid: bool = True) -> list[Chunk]:
     out: list[Chunk] = []
     for f in sorted(clean_dir.glob("*.txt")):
-        out.extend(pack(*parse(f)))
+        source, url, body = parse(f)
+        mode = doc_mode(source, url) if hybrid else "sliding"
+        out.extend(pack(source, url, body, mode))
     return out
 
 
@@ -201,9 +247,22 @@ def main() -> int:
     ap.add_argument("--stats", action="store_true", help="print chunk-size distribution")
     ap.add_argument("--print", type=int, default=0, metavar="N",
                     help="print first N chunks")
+    ap.add_argument("--size", type=int, help="override chunk size (tokens)")
+    ap.add_argument("--overlap", type=int, help="override overlap (tokens)")
+    ap.add_argument("--no-hybrid", dest="hybrid", action="store_false",
+                    help="disable per-document strategy; use one sliding window "
+                         "for every file (hybrid is the default: atomic specs, "
+                         "sectioned tables, sliding prose)")
+    ap.set_defaults(hybrid=True)
     args = ap.parse_args()
 
-    chunks = chunk_corpus()
+    global CHUNK_TOKENS, OVERLAP_TOKENS
+    if args.size:
+        CHUNK_TOKENS = args.size
+    if args.overlap is not None:
+        OVERLAP_TOKENS = args.overlap
+
+    chunks = chunk_corpus(hybrid=args.hybrid)
     print(f"{len(chunks)} chunks from {len(list(CLEAN_DIR.glob('*.txt')))} files "
           f"(target {CHUNK_TOKENS} tok, overlap {OVERLAP_TOKENS})\n")
 
