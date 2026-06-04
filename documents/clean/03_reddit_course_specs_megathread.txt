@@ -148,7 +148,7 @@ However, when I check in the "Prepare for Registration" module in OSCAR, it is r
 
 "Time tickets do not allow registration at this time.
 
- Please register within these times:
+Please register within these times:
 
 06/17/2026 10:00 AM - 07/02/2026 11:59 PM"
 

@@ -49,7 +49,7 @@ CSE 6250 Big Data for Health
 
 (
 Formerly CSE 8803)
-ISYE 6416 Computational Statistics
+ISYE6416 Computational Statistics
 ISYE 6420 Bayesian Methods
 ISYE 6664 Stochastic Optimization
 

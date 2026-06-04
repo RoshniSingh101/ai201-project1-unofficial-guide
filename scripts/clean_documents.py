@@ -23,6 +23,30 @@ from pathlib import Path
 RAW_DIR = Path(__file__).resolve().parent.parent / "documents" / "raw"
 CLEAN_DIR = Path(__file__).resolve().parent.parent / "documents" / "clean"
 
+# --- Mojibake repair ---------------------------------------------------------
+# The scrape decoded some UTF-8 bytes as latin-1, so emoji/symbols arrive as
+# garbled runs like "â\x98\x80ï¸" (should be "☀️"). These all live in the
+# 0x80-0xFF range; genuine Unicode (curly quotes ’ … at codepoints > 255) is
+# left untouched. We decode each run latin-1 -> utf-8, dropping fragments that
+# can't be recovered (truncated emoji from the scrape).
+MOJIBAKE_RUN_RE = re.compile(r"[\x80-\xff]+")
+
+
+def fix_mojibake(text: str) -> str:
+    if text.isascii():
+        return text
+
+    def repl(m: "re.Match[str]") -> str:
+        run = m.group(0)
+        try:
+            return run.encode("latin-1").decode("utf-8")
+        except UnicodeError:
+            # recover whatever decodes, drop the unrecoverable fragment
+            return run.encode("latin-1", "ignore").decode("utf-8", "ignore")
+
+    return MOJIBAKE_RUN_RE.sub(repl, text)
+
+
 # --- HTML / entities ---------------------------------------------------------
 HTML_TAG_RE = re.compile(r"<[^>]+>")
 HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
@@ -180,7 +204,7 @@ def collapse_blanks(lines: list[str]) -> list[str]:
 
 
 def clean_text(raw: str) -> str:
-    lines = strip_html(raw).splitlines()
+    lines = fix_mojibake(strip_html(raw)).splitlines()
     header, body = split_header(lines)
     body = skip_nav_header(body, source_title(header))
     body = truncate_trailer(body)

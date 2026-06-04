@@ -4,7 +4,7 @@ URL: https://omscs.gatech.edu/specialization-human-computer-interaction
 
 Specialization in Human-Computer Interaction
 
-For a Master of Science in Computer Science, Specialization in Human-Computer Interaction (15 hours), students must select from the following:
+For a Master of Science in Computer Science, Specialization in Human-Computer Interaction (15 hours), students must selectfrom the following:
 
 *
 The following is a complete look at the courses that may be selected to fulfill the Human-Computer Interaction specialization, regardless of campus; only courses listed with

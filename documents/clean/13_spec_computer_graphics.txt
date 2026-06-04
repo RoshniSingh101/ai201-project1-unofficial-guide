@@ -4,7 +4,7 @@ URL: https://omscs.gatech.edu/specialization-computer-graphics
 
 Specialization in Computer Graphics
 
-For a Master of Science in Computer Science, Specialization in Computer Graphics (15 hours), students must select from the following:
+For a Master of Science in Computer Science, Specialization in Computer Graphics (15 hours), students must selectfrom the following:
 *The following is a complete look at the courses that may be selected to fulfill the Computer Graphics specialization, regardless of campus; only courses listed with
 bold
  titles are offered through the online program.
