@@ -142,7 +142,7 @@ def build() -> None:
     # assign each chunk its position within its own source document
     docs, metas, ids = [], [], []
     per_source_counter: dict[str, int] = {}
-    for c in chunks:
+    for gi, c in enumerate(chunks):
         idx = per_source_counter.get(c.source, 0)
         per_source_counter[c.source] = idx + 1
         docs.append(c.text)
@@ -153,9 +153,11 @@ def build() -> None:
             "mode": cd.doc_mode(c.source, c.url),
             "tokens": c.tokens,
         })
-        # ChromaDB ids must be unique strings
+        # ChromaDB ids must be unique strings. The slug is truncated, so prefix
+        # a global counter to stay unique even when two sources share a prefix
+        # (e.g. "<spec> ... (Spring/Fall)" vs "... (Summer)").
         slug = "".join(ch if ch.isalnum() else "_" for ch in c.source)[:40]
-        ids.append(f"{slug}-{idx}")
+        ids.append(f"{gi}-{slug}-{idx}")
 
     model = get_model()
     # Per difficulty/workload source, the max rank present = the "hardest"
