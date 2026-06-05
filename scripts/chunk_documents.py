@@ -233,12 +233,120 @@ def pack(source: str, url: str, body: list[str], mode: str = "sliding") -> list[
     return chunks
 
 
+# --- derived cross-document chunks: specialization x difficulty -------------
+# The difficulty ranking and the specialization course lists live in separate
+# documents, so a question like "easiest/hardest courses in the ML spec" needs
+# a join no single retrieved chunk provides. We precompute that join here and
+# emit one self-contained chunk per (specialization x difficulty source), so
+# the answer is retrievable directly instead of left to the LLM to assemble
+# from partial chunks.
+_COURSE_RE = re.compile(r"\b([A-Z]{2,4})\s?(\d{4})\b")
+_TITLE_RE = re.compile(r"^([A-Z]{2,4})\s?(\d{4})\s+(.+)$")
+
+
+def _difficulty_index(body: list[str]) -> dict[tuple[str, str], tuple[int, str, str]]:
+    """Map (dept, number) -> (overall_rank, aka, tier) from a difficulty doc.
+
+    Rank 1 = easiest. Keys appearing in more than one row (e.g. the several
+    distinct 'CS 8803' special topics) are dropped as ambiguous so we never
+    annotate a spec course with the wrong row.
+    """
+    rows: dict[tuple[str, str], list[tuple[int, str, str]]] = {}
+    tier = ""
+    for ln in body:
+        s = ln.strip()
+        if SECTION_RE.match(s) and s.lower().startswith("tier"):
+            tier = s
+        if not is_data_row(ln):
+            continue
+        cells = [c.strip() for c in ln.split("\t")]
+        rank_digits = "".join(c for c in cells[0].lstrip(_RANK_PREFIX) if c.isdigit())
+        course = cells[1] if len(cells) > 1 else ""
+        aka = cells[2] if len(cells) > 2 else ""
+        m = re.match(r"([A-Za-z]{2,4})\s+(\d{4})", course)
+        if rank_digits and m:
+            key = (m.group(1).upper(), m.group(2))
+            rows.setdefault(key, []).append((int(rank_digits), aka, tier))
+    return {k: v[0] for k, v in rows.items() if len(v) == 1}
+
+
+def _spec_courses(body: list[str]) -> list[tuple[tuple[str, str], str]]:
+    """Ordered, de-duplicated [( (dept,number), full_title )] from a spec doc."""
+    out, seen = [], set()
+    for ln in body:
+        m = _TITLE_RE.match(ln.strip())
+        if not m:
+            continue
+        key = (m.group(1).upper(), m.group(2))
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append((key, f"{m.group(1)} {m.group(2)} {m.group(3).strip()}"))
+    return out
+
+
+def _tier_short(tier: str) -> str:
+    """'Tier 7 (Tell your Loved Ones goodbye)' -> 'Tier 7'."""
+    m = re.match(r"(Tier\s*\d+)", tier)
+    return m.group(1) if m else tier
+
+
+def derive_spec_difficulty_chunks(clean_dir: Path) -> list[Chunk]:
+    files = {f.name: parse(f) for f in clean_dir.glob("*.txt")}
+
+    # difficulty sources -> (label, index map)
+    difficulty = []
+    for name, (src, url, body) in files.items():
+        if "Difficulty" in src:
+            label = "Summer" if "Summer" in src else "Spring/Fall"
+            difficulty.append((label, src, _difficulty_index(body)))
+
+    out: list[Chunk] = []
+    for name, (src, url, body) in files.items():
+        if "omscs.gatech.edu" not in url:  # specialization pages only
+            continue
+        spec = src.replace("Specialization in ", "").strip()
+        courses = _spec_courses(body)
+        if not courses:
+            continue
+        for label, dsrc, index in difficulty:
+            ranked = sorted(
+                ((index[k][0], title, index[k][1], index[k][2])
+                 for k, title in courses if k in index),
+                key=lambda r: r[0],
+            )
+            if len(ranked) < 2:
+                continue
+            lines = [
+                f"{spec} specialization — courses ranked by difficulty "
+                f"({label} 2025). Rank 1 = easiest, higher rank = harder.",
+                "",
+            ]
+            easiest = ranked[0]
+            hardest = ranked[-1]
+            lines.append(
+                f"Easiest course in the {spec} specialization: {easiest[1]} "
+                f"({easiest[2]}) — rank {easiest[0]}, {easiest[3]}.")
+            lines.append(
+                f"Hardest course in the {spec} specialization: {hardest[1]} "
+                f"({hardest[2]}) — rank {hardest[0]}, {hardest[3]}.")
+            lines.append("")
+            lines.append(f"All ranked {spec} courses, easiest to hardest:")
+            for rank, title, aka, tier in ranked:
+                lines.append(f"- rank {rank}: {title} ({aka}) — {_tier_short(tier)}")
+            chunk_src = f"{spec} Specialization Courses Ranked by Difficulty ({label})"
+            out.append(Chunk(chunk_src, url, "\n".join(lines)))
+    return out
+
+
 def chunk_corpus(clean_dir: Path = CLEAN_DIR, hybrid: bool = True) -> list[Chunk]:
     out: list[Chunk] = []
     for f in sorted(clean_dir.glob("*.txt")):
         source, url, body = parse(f)
         mode = doc_mode(source, url) if hybrid else "sliding"
         out.extend(pack(source, url, body, mode))
+    if hybrid:
+        out.extend(derive_spec_difficulty_chunks(clean_dir))
     return out
 
 
