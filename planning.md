@@ -45,9 +45,9 @@ Domain: Student reviews for the OMSCS program at Georgia Tech. The information i
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 Hybrid Chunking 
 
-**Chunk size:** 500 tokens
+**Chunk size:** 200 tokens
 
-**Overlap:** 50 tokens
+**Overlap:** 20 tokens
 
 **Reasoning:** Experimenting for now (multiples of 5 and 10)
 
@@ -63,7 +63,7 @@ Hybrid Chunking
 
 **Embedding model:**  all-MiniLM-L6-v2
 
-**Top-k:** 5
+**Top-k:** 8
 
 **Production tradeoff reflection:** Accuracy and precision on keywords (course numbers and information) that reflect sentiment of OMSCS class reviews.
 
