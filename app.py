@@ -8,6 +8,7 @@ then open http://localhost:7860
 The answer comes only from retrieved course documents, and the "Retrieved from"
 panel lists the source documents the answer was grounded in.
 """
+import os
 import sys
 from pathlib import Path
 
@@ -57,7 +58,21 @@ with gr.Blocks(title="OMSCS Unofficial Guide") as demo:
 
 
 if __name__ == "__main__":
+    # If a proxy/VPN env var routes localhost through a proxy, Gradio's
+    # post-launch self-check fails ("When localhost is not accessible ...").
+    # Make sure localhost bypasses any proxy.
+    os.environ.setdefault("NO_PROXY", "localhost,127.0.0.1,0.0.0.0")
+    os.environ.setdefault("no_proxy", "localhost,127.0.0.1,0.0.0.0")
+
     # show_api=False skips Gradio's API-schema generation, which can crash with
     # "TypeError: unhashable type: 'dict'" on some gradio_client/fastapi version
     # combinations. The UI is unaffected.
-    demo.launch(show_api=False)
+    #
+    # Overridable via env: set GRADIO_SHARE=1 to create a public tunnel link if
+    # localhost still isn't reachable in your environment.
+    demo.launch(
+        show_api=False,
+        server_name=os.getenv("GRADIO_SERVER_NAME", "127.0.0.1"),
+        server_port=int(os.getenv("GRADIO_SERVER_PORT", "7860")),
+        share=os.getenv("GRADIO_SHARE", "").lower() in ("1", "true", "yes"),
+    )
