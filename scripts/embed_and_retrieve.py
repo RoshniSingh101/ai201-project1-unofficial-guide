@@ -32,7 +32,9 @@ import chunk_documents as cd  # noqa: E402
 MODEL_NAME = "all-MiniLM-L6-v2"
 COLLECTION = "omscs"
 CHROMA_DIR = Path(__file__).resolve().parent.parent / "documents" / "chroma"
-DEFAULT_K = 5  # planning.md Retrieval Approach: top-k = 5
+DEFAULT_K = 8  # planning.md Retrieval Approach (raised from 5: these Reddit
+               # sources carry noisy prose/comment chunks that crowd out the
+               # answer-bearing table rows at k=5)
 
 # The 3+ evaluation-plan queries used by `test`.
 EVAL_QUERIES = [
@@ -72,6 +74,67 @@ def get_collection(reset: bool = False):
     )
 
 
+# --- difficulty-descriptor augmentation --------------------------------------
+def _is_difficulty_source(source: str) -> bool:
+    return "Difficulty" in source or "Workload" in source
+
+def _chunk_ranks(text: str) -> list[int]:
+    """Ranks (first cell of each data row) appearing in a chunk, 1=easiest."""
+    ranks = []
+    for ln in text.splitlines():
+        if cd.is_data_row(ln):
+            first = ln.split("\t", 1)[0].strip().lstrip(cd._RANK_PREFIX)
+            digits = "".join(ch for ch in first if ch.isdigit())
+            if digits:
+                ranks.append(int(digits))
+    return ranks
+
+def _difficulty_descriptor(ranks: list[int], max_rank: int) -> str:
+    """A natural-language difficulty caption so table chunks (mostly course
+    codes + numbers) match difficulty queries like 'hardest courses'.
+
+    The list defines rank 1 = easiest and the max rank = hardest, but the tier
+    headers (e.g. 'Tier 7 (Tell your Loved Ones goodbye)') carry no lexical
+    signal for 'hard'/'easy'. We derive that signal from the rank position.
+    """
+    if not ranks or max_rank <= 0:
+        return ""
+    # The four captions are deliberately parallel — same length and sentence
+    # shape — so neither extreme out-attracts the opposite query (a longer
+    # "hardest" caption would also score higher on "easiest courses", breaking
+    # symmetry). Each echoes the natural-language phrasing a user would use.
+    frac = max(ranks) / max_rank
+    if frac >= 0.8:
+        return ("The hardest and most difficult courses. The toughest, "
+                "highest-difficulty, heaviest-workload courses to take.")
+    if frac >= 0.55:
+        return ("Hard and difficult courses. Challenging, high-difficulty, "
+                "high-workload courses to take.")
+    if frac <= 0.25:
+        return ("The easiest and simplest courses. The lightest, "
+                "lowest-difficulty, lowest-workload courses to take.")
+    return ("Medium and moderate courses. Average, mid-difficulty, "
+            "mid-workload courses to take.")
+
+
+def _embed_payload(source: str, text: str, max_rank: int) -> str:
+    """The text that gets EMBEDDED for a chunk (the stored document is always
+    the raw chunk text — only the retrieval vector is enriched here).
+
+    For ranking-table chunks we prepend a difficulty descriptor derived from
+    the chunk's rank position, so a tier of the hardest courses matches
+    "hardest courses" even though its header ("Tier 7 (Tell your Loved Ones
+    goodbye)") carries no such signal. The full text is kept (its source title
+    and row tokens still carry topical signal).
+    """
+    if _is_difficulty_source(source):
+        ranks = _chunk_ranks(text)
+        if ranks:
+            desc = _difficulty_descriptor(ranks, max_rank)
+            return f"{source}\n\n{desc}\n\n{text}"
+    return f"{source}\n\n{text}"
+
+
 # --- build: embed all chunks and load them into ChromaDB ---------------------
 def build() -> None:
     chunks = cd.chunk_corpus()  # hybrid chunking (the default)
@@ -95,12 +158,21 @@ def build() -> None:
         ids.append(f"{slug}-{idx}")
 
     model = get_model()
-    # Context augmentation: embed the source title alongside the chunk text so
-    # table-heavy chunks (mostly course codes + numbers) still carry the
-    # document's topical signal (e.g. "Ranked by Difficulty"). The stored
-    # document stays the raw chunk text; only the embedded payload is enriched.
-    payloads = [f"{src}\n\n{txt}" for src, txt in
-                ((m["source"], d) for m, d in zip(metas, docs))]
+    # Per difficulty/workload source, the max rank present = the "hardest"
+    # anchor, so a chunk's rank position can be turned into a difficulty word.
+    src_max_rank: dict[str, int] = {}
+    for m, d in zip(metas, docs):
+        if _is_difficulty_source(m["source"]):
+            r = _chunk_ranks(d)
+            if r:
+                src_max_rank[m["source"]] = max(src_max_rank.get(m["source"], 0),
+                                                max(r))
+
+    # Context augmentation (see _embed_payload): the stored document stays the
+    # raw chunk text; only the embedded vector is enriched, with ranking-table
+    # chunks reduced to a concentrated difficulty summary.
+    payloads = [_embed_payload(m["source"], d, src_max_rank.get(m["source"], 0))
+                for m, d in zip(metas, docs)]
     embeddings = model.encode(
         payloads, show_progress_bar=True, normalize_embeddings=True
     ).tolist()

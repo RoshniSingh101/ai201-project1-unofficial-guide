@@ -31,7 +31,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import embed_and_retrieve as er  # noqa: E402
 
 MODEL = "llama-3.3-70b-versatile"
-DEFAULT_K = 5  # planning.md Retrieval Approach
+DEFAULT_K = 8  # planning.md Retrieval Approach (see embed_and_retrieve.DEFAULT_K)
 REFUSAL = "I don't have enough information on that."
 
 SYSTEM_PROMPT = f"""You are an assistant that answers questions about the \
