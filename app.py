@@ -57,4 +57,7 @@ with gr.Blocks(title="OMSCS Unofficial Guide") as demo:
 
 
 if __name__ == "__main__":
-    demo.launch()
+    # show_api=False skips Gradio's API-schema generation, which can crash with
+    # "TypeError: unhashable type: 'dict'" on some gradio_client/fastapi version
+    # combinations. The UI is unaffected.
+    demo.launch(show_api=False)
