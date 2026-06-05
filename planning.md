@@ -43,6 +43,7 @@ Domain: Student reviews for the OMSCS program at Georgia Tech. The information i
      State your chunk size (in tokens or characters), overlap size, and explain why those
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
+Hybrid Chunking 
 
 **Chunk size:** 500 tokens
 
@@ -60,7 +61,7 @@ Domain: Student reviews for the OMSCS program at Georgia Tech. The information i
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
 
-**Embedding model:**  BAAI/bge-m3 from Hugging Face (Hybrid Chunking)
+**Embedding model:**  all-MiniLM-L6-v2
 
 **Top-k:** 5
 
@@ -104,7 +105,7 @@ Domain: Student reviews for the OMSCS program at Georgia Tech. The information i
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
 
-![alt text](./documents/diagram.png)
+![alt text](./documents/final_diagram.png)
      
 
 ---
