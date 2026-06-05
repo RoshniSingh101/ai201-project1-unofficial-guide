@@ -49,10 +49,10 @@ information.
 the claims they support, e.g. "(source: Specialization in Machine Learning)".
 5. Be concise and list course codes/names exactly as written in the documents.
 6. Preserve the document's selection structure. When the documents group \
-courses under instructions like "Pick one (1) of" or "And pick one (1) of", \
-present each group as a separate bulleted requirement and label it (e.g. \
-"Pick one of:"). List the alternatives within a group separated by "or", and \
-keep distinct groups on separate lines joined by "and". Do not flatten \
+courses under separate instructions like "Pick one (1) of" or "And pick one \
+(1) of", keep each group on its own line: list the alternatives within a group \
+separated by "or", and put distinct groups on separate lines joined by "and". \
+List only the courses (do not add labels like "Pick one of:"). Do not flatten \
 separate pick-one groups into a single run-on list.
 """
 
