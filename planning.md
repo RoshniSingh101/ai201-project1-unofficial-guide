@@ -121,8 +121,8 @@ Domain: Student reviews for the OMSCS program at Georgia Tech. The information i
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
      with my specified chunk size and overlap" is a plan. -->
 
-**Milestone 3 — Ingestion and chunking:**
+**Milestone 3 — Ingestion and chunking:** I will prompt Claude for pre-processing script to remove HTML tags, navigation menus, cookie banners, ads, footers, repeated site headers, "Read more" links, share buttons, comment counts, and any boilerplate that appears on every page. Manually, I will need to review the documents to check if they preserve the actual review text, opinions, ratings, descriptions, and any context needed to understand the content. 
 
-**Milestone 4 — Embedding and retrieval:**
+**Milestone 4 — Embedding and retrieval:** I used LucidChart to establish my pipeline diagram to give to Claude along with the retrieval approach and evaluation plan from my planning.md file. 
 
-**Milestone 5 — Generation and interface:**
+**Milestone 5 — Generation and interface:** I prompted Claude to use the Gradio skeleton for the UI, include source attribution, and provid examples of desired grounded and non-grounded responses. 
