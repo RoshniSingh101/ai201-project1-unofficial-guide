@@ -84,9 +84,20 @@
      Do not just say "I told it to use the documents" — show the actual instruction or explain
      the mechanism. -->
 
-**System prompt grounding instruction:**
+**System prompt grounding instruction:** You are an assistant that answers questions about the Georgia Tech OMSCS program using ONLY the reference documents provided in the user message.
 
-**How source attribution is surfaced in the response:**
+Strict rules:
+1. Use ONLY information found in the provided documents. Do not use any prior \
+knowledge, training data, or outside information.
+1. If the documents do not contain enough information to answer the question, \
+reply with EXACTLY this sentence and nothing else: "{REFUSAL}"
+1. Do not guess, infer beyond the text, or fill gaps with plausible-sounding \
+information.
+1. When you do answer, cite the source document name(s) in parentheses next to \
+the claims they support, e.g. "(source: Specialization in Machine Learning)".
+1. Be concise and list course codes/names exactly as written in the documents.
+
+**How source attribution is surfaced in the response:** Source attribution consists of embedded citations and a Retrieved from box that houses all the sources the RAG chatbot parsed through before generating the output to the user. 
 
 ---
 
@@ -122,13 +133,13 @@
      "The embedding model treated the professor's nickname as out-of-vocabulary and returned
      results from an unrelated review" is an explanation. -->
 
-**Question that failed:**
+**Question that failed:** Questions that asked for class difficulty based on specialization caused problems. 
 
-**What the system returned:**
+**What the system returned:** The system returned that it did not have enough information. 
 
-**Root cause (tied to a specific pipeline stage):**
+**Root cause (tied to a specific pipeline stage):** The primary issue came from how the system chunked the ingested documents. Another minor issue that popped up was in the embed and retrieve script as well. 
 
-**What you would change to fix it:**
+**What you would change to fix it:** I worked with Claude to fix the issue. I think the main issue was the web scraping and cleaning scripts. I had to manually clean them after running both scripts, so updating the cleaning scripts to remove comments and ads would have made parsing more efficient. 
 
 ---
 
@@ -137,9 +148,9 @@
 <!-- Reflect on how planning.md shaped your implementation.
      Answer both questions with at least 2–3 sentences each. -->
 
-**One way the spec helped you during implementation:**
+**One way the spec helped you during implementation:** The architecture diagrams, domain, and documents guided Claude on how to build the RAG chatbot and pipelines. 
 
-**One way your implementation diverged from the spec, and why:**
+**One way your implementation diverged from the spec, and why:** The top-k count and chunking size diverged from the spec because of how much noise existed in the documents I provided Claude to pre-process and ingest. 
 
 ---
 
@@ -156,12 +167,12 @@
 
 **Instance 1**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* I opened the folder in Claude and asked it to reference my planning.md file, architecture diagram, and provided the instructions from milestone 4 to build the document pipeline. 
+- *What it produced:* It chose to use a top-k 8 instead of 5 approach and built the pipeline.
+- *What I changed or overrode:* I had a conversation with Claude back and forth on PRs, and read stack traces to debug demo.launch() to ensure the show_api field returned True. 
 
 **Instance 2**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* I prompted Claude on scripts to clean the ingested documents I provided (Reddit Threads, Wikis, Official Websites). 
+- *What it produced:* We had a background and forth conversation on API calls to clean the documents. Reddit threads posed the greatest challenge to Claude. 
+- *What I changed or overrode:* At the end, I needed to manually clean out the comments and ads from the Reddit threads. I could have converted the documents to pdf files, but I wanted a continuous pipeline of information flowing from these documents in case something changed. 
