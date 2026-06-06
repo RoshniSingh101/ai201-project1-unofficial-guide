@@ -1,9 +1,9 @@
 # The Unofficial Guide — Project 1
 
-> **How to use this template:**
+<!-- > **How to use this template:**
 > Complete each section *after* you've built and tested the corresponding part of your system.
 > Do not write placeholder text — if a section isn't done yet, leave it blank and come back.
-> Every section below is required for submission. One-liners will not receive full credit.
+> Every section below is required for submission. One-liners will not receive full credit. -->
 
 ---
 
@@ -112,7 +112,7 @@ the claims they support, e.g. "(source: Specialization in Machine Learning)".
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | Please give me a list of medium-level courses to take for the human-computer interaction specialization in fall/spring semesters. | CS 6750: Human-Computer Interaction | ![q1](documents/q1%20eval.png)| Relevant (hits home on courses I was not expecting) | Accurate (better than I expected, uses Reddit Tiers) |
+| 1 | Please give me a list of medium-level courses to take for the human-computer interaction specialization in fall/spring semesters. | CS 6750: Human-Computer Interaction | ![q1](documents/q1%20eval.png)| Partially Relevant (Ranked by tier entry level instead of medium) | Partially Accurate |
 | 2 | Please give me a list of easy-level courses to take for computing systems. | CS 6250: Computer Networks, CS 6310: Software Architecture and Design, and CS 6422: Database System Implementation |![q2](documents/q2%20eval.png)| Relevant | Accurate |
 | 3 | What are some of the hardest courses in the OMSCS program?| CSE 6620: Intro to High-Computing, CS 6211: System Design for Cloud Computing, CS 6476: Computer Vision, CS 7210: Distributed Computing, CS 6475: Computational Photography, CS 8803 O08: Compilers - Theory and Practice | ![q3](documents/q3%20eval.png) | Relevant | Accurate |
 | 4 | What are the core classes for the Computer Graphics specialization? | CS 6491: Foundations of Computer Graphics, CS 6457: Video Game Design, CS 7496: Computer Animation, CS 6505 Computability, Algorithms, and Complexity, CS 6515 Introduction to Graduate Algorithms. Please note that CS 6505 is only avaliable to students on-campus because the course is not bolded on the website. |![q4](documents/q4%20eval.png)| Relevant | Accurate |
@@ -178,4 +178,528 @@ the claims they support, e.g. "(source: Specialization in Machine Learning)".
 
 - *What I gave the AI:* I prompted Claude on scripts to clean the ingested documents I provided (Reddit Threads, Wikis, Official Websites). 
 - *What it produced:* We had a background and forth conversation on API calls to clean the documents. Reddit threads posed the greatest challenge to Claude. 
-- *What I changed or overrode:* At the end, I needed to manually clean out the comments and ads from the Reddit threads. I could have converted the documents to pdf files, but I wanted a continuous pipeline of information flowing from these documents in case something changed. 
+- *What I changed or overrode:* At the end, I needed to manually clean out the comments and ads from the Reddit threads. I could have converted the documents to pdf files, but I wanted a continuous pipeline of information flowing from these documents in case something changed.
+
+---
+## Demo Video
+Here is the demo video linked here that goes over the retrieval test results across three queries and their associated chunks: https://drive.google.com/file/d/18FUEpTzV61jSuykKzEYUCWCQ9usKqVFc/view?usp=share_link
+
+---
+
+## Below are the associated chunks with the five questions from the demo video: 
+
+```bash
+.venv/bin/python scripts/embed_and_retrieve.py query "Please give me a list of medium-level courses to take for the human-computer interaction specialization in fall/spring semesters."
+```
+loading embedding model: all-MiniLM-L6-v2 ...
+
+QUERY: Please give me a list of medium-level courses to take for the human-computer interaction specialization in fall/spring semesters.
+------------------------------------------------------------
+
+[1] distance=0.291  source='Specialization in Human-Computer Interaction'  chunk_index=0
+------------------------------------------------------------
+Specialization in Human-Computer Interaction
+
+For a Master of Science in Computer Science, Specialization in Human-Computer Interaction (15 hours), students must selectfrom the following:
+
+*
+The following is a complete look at the courses that may be selected to fulfill the Human-Computer Interaction specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program
+.
+
+Core Courses (6 hours)
+
+CS 6456 Principles of User Interface Software OR
+CS 7470 …[truncated]
+
+[2] distance=0.353  source='Human-Computer Interaction Specialization Courses Ranked by Difficulty (Summer)'  chunk_index=0
+------------------------------------------------------------
+Human-Computer Interaction specialization — courses ranked by difficulty (Summer 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Human-Computer Interaction specialization: CS 7470 Mobile and Ubiquitous Computing (MUC) — rank 5, Tier 2 (Easy).
+Hardest course in the Human-Computer Interaction specialization: CS 6750 Human-Computer Interaction (HCI) — rank 23, Tier 4 (Medium).
+
+All ranked Human-Computer Interaction courses, easiest to hardest:
+- rank 5: CS 7470 Mobile and Ubiq …[truncated]
+
+[3] distance=0.355  source='Human-Computer Interaction Specialization Courses Ranked by Difficulty (Spring/Fall)'  chunk_index=0
+------------------------------------------------------------
+Human-Computer Interaction specialization — courses ranked by difficulty (Spring/Fall 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Human-Computer Interaction specialization: CS 6795 Introduction to Cognitive Science (ICS) — rank 7, Tier 2 (Easy).
+Hardest course in the Human-Computer Interaction specialization: CS 6750 Human-Computer Interaction (HCI) — rank 30, Tier 4 (Medium).
+
+All ranked Human-Computer Interaction courses, easiest to hardest:
+- rank 7: CS 6795 Introduc …[truncated]
+
+[4] distance=0.388  source='Specialization in Computer Graphics'  chunk_index=0
+------------------------------------------------------------
+Specialization in Computer Graphics
+
+For a Master of Science in Computer Science, Specialization in Computer Graphics (15 hours), students must selectfrom the following:
+*The following is a complete look at the courses that may be selected to fulfill the Computer Graphics specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program.
+Core Courses (6 hours)
+Pick one (1) of:
+CS 6491 Foundations of Computer Graphics
+CS 6457 Video Game Design
+CS 7 …[truncated]
+
+[5] distance=0.419  source='Specialization in Artificial Intelligence'  chunk_index=0
+------------------------------------------------------------
+Specialization in Artificial Intelligence (formerly Interactive Intelligence)
+
+For a Master of Science in Computer Science, Specialization in Artificial Intelligence (15 hours), students must select from the following:
+*The following is a complete look at the courses that may be selected to fulfill the Artificial Intelligence specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program.
+Core Courses (9 hours)
+Algorithms and Design: Take one ( …[truncated]
+
+[6] distance=0.425  source='Specialization in Computing Systems'  chunk_index=0
+------------------------------------------------------------
+Specialization in Computing Systems
+
+For a Master of Science in Computer Science, Specialization in Computing Systems (18 hours), students must selectfrom the following:
+*
+The following is a complete look at the courses that may be selected to fulfill the Computing Systems specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program
+.
+Core Courses (9 hours)
+CS 6505 Computability, Algorithms, and Complexity
+or
+CS 6515 Introduction to Graduate  …[truncated]
+
+[7] distance=0.463  source='Course & Specs Megathread'  chunk_index=0
+------------------------------------------------------------
+Course & Specs Megathread - Selection, Choices & Registration : r/OMSCS
+Detective-Raichu
+Course & Specs Megathread - Selection, Choices & Registration
+Megathread
+📌Specializations & Courses Megathread - Selection & Registration
+
+Welcome to the Specialization & Course Megathread for OMSCS!
+
+Now that you've {just been accepted / been here for a bit / been here for awhile}*, this thread is designed to help you navigate the various specializations offered and assist with selecting the right courses f …[truncated]
+
+[8] distance=0.472  source='Specialization in Computational Perception and Robotics'  chunk_index=0
+------------------------------------------------------------
+Specialization in Computational Perception and Robotics
+
+For a Master of Science in Computer Science, Specialization in Computational Perception and Robotics (15 hours), students must selectfrom the following:
+
+*The following is a complete look at the courses that may be selected to fulfill the Computational Perception and Robotics specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program.
+
+Core Courses (6 hours)
+
+Algorithms:Pick one (1) o …[truncated]
+
+```bash
+.venv/bin/python scripts/embed_and_retrieve.py query "Please give me a list of easy-level courses to take for computing systems."
+```
+loading embedding model: all-MiniLM-L6-v2 ...
+
+QUERY: Please give me a list of easy-level courses to take for computing systems.
+------------------------------------------------------------
+
+[1] distance=0.394  source='Specialization in Computing Systems'  chunk_index=0
+------------------------------------------------------------
+Specialization in Computing Systems
+
+For a Master of Science in Computer Science, Specialization in Computing Systems (18 hours), students must selectfrom the following:
+*
+The following is a complete look at the courses that may be selected to fulfill the Computing Systems specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program
+.
+Core Courses (9 hours)
+CS 6505 Computability, Algorithms, and Complexity
+or
+CS 6515 Introduction to Graduate  …[truncated]
+
+[2] distance=0.401  source='Computing Systems Specialization Courses Ranked by Difficulty (Summer)'  chunk_index=0
+------------------------------------------------------------
+Computing Systems specialization — courses ranked by difficulty (Summer 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Computing Systems specialization: CS 6300 Software Development Process (SDP) — rank 13, Tier 2 (Easy).
+Hardest course in the Computing Systems specialization: CS 6515 Introduction to Graduate Algorithms (GA) — rank 49, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Computing Systems courses, easiest to hardest:
+- rank 13: CS 6300 Software Development P …[truncated]
+
+[3] distance=0.410  source='Computing Systems Specialization Courses Ranked by Difficulty (Spring/Fall)'  chunk_index=0
+------------------------------------------------------------
+Computing Systems specialization — courses ranked by difficulty (Spring/Fall 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Computing Systems specialization: CS 6300 Software Development Process (SDP) — rank 15, Tier 2 (Easy).
+Hardest course in the Computing Systems specialization: CS 7210 Distributed Computing (DC) — rank 64, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Computing Systems courses, easiest to hardest:
+- rank 15: CS 6300 Software Development Process (S …[truncated]
+
+[4] distance=0.495  source='Specialization in Computer Graphics'  chunk_index=0
+------------------------------------------------------------
+Specialization in Computer Graphics
+
+For a Master of Science in Computer Science, Specialization in Computer Graphics (15 hours), students must selectfrom the following:
+*The following is a complete look at the courses that may be selected to fulfill the Computer Graphics specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program.
+Core Courses (6 hours)
+Pick one (1) of:
+CS 6491 Foundations of Computer Graphics
+CS 6457 Video Game Design
+CS 7 …[truncated]
+
+[5] distance=0.504  source='Computational Perception and Robotics Specialization Courses Ranked by Difficulty (Spring/Fall)'  chunk_index=0
+------------------------------------------------------------
+Computational Perception and Robotics specialization — courses ranked by difficulty (Spring/Fall 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Computational Perception and Robotics specialization: CS 7650 Natural Language (NLP) — rank 8, Tier 2 (Easy).
+Hardest course in the Computational Perception and Robotics specialization: CS 6475 Computational Photography (CP) — rank 65, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Computational Perception and Robotics courses, …[truncated]
+
+[6] distance=0.517  source='Course & Specs Megathread'  chunk_index=0
+------------------------------------------------------------
+Course & Specs Megathread - Selection, Choices & Registration : r/OMSCS
+Detective-Raichu
+Course & Specs Megathread - Selection, Choices & Registration
+Megathread
+📌Specializations & Courses Megathread - Selection & Registration
+
+Welcome to the Specialization & Course Megathread for OMSCS!
+
+Now that you've {just been accepted / been here for a bit / been here for awhile}*, this thread is designed to help you navigate the various specializations offered and assist with selecting the right courses f …[truncated]
+
+[7] distance=0.523  source='Human-Computer Interaction Specialization Courses Ranked by Difficulty (Spring/Fall)'  chunk_index=0
+------------------------------------------------------------
+Human-Computer Interaction specialization — courses ranked by difficulty (Spring/Fall 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Human-Computer Interaction specialization: CS 6795 Introduction to Cognitive Science (ICS) — rank 7, Tier 2 (Easy).
+Hardest course in the Human-Computer Interaction specialization: CS 6750 Human-Computer Interaction (HCI) — rank 30, Tier 4 (Medium).
+
+All ranked Human-Computer Interaction courses, easiest to hardest:
+- rank 7: CS 6795 Introduc …[truncated]
+
+[8] distance=0.532  source='Computational Perception and Robotics Specialization Courses Ranked by Difficulty (Summer)'  chunk_index=0
+------------------------------------------------------------
+Computational Perception and Robotics specialization — courses ranked by difficulty (Summer 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Computational Perception and Robotics specialization: CS 7650 Natural Language (NLP) — rank 9, Tier 2 (Easy).
+Hardest course in the Computational Perception and Robotics specialization: CS 6515 Introduction to Graduate Algorithms (GA) — rank 49, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Computational Perception and Robotics cou …[truncated]
+
+```bash
+venv/bin/python scripts/embed_and_retrieve.py query "What are some of the hardest courses in the OMSCS program?"
+```
+loading embedding model: all-MiniLM-L6-v2 ...
+
+QUERY: What are some of the hardest courses in the OMSCS program?
+------------------------------------------------------------
+
+[1] distance=0.332  source='Workload Distributions'  chunk_index=6
+------------------------------------------------------------
+#       Course Code     AKA     Count   5th %   25th %  Median  75th %  95th %  Mean
+(continued)
+
+56      CS 6603 AIES    88      1.4     3.8     5       8       14.7    6.4
+57      PUBP 6725       ISP     7       1.3     3       5       10      11.4    6.3
+58      CS 8803 O22     SIR     4       3.3     4.5     5       5.8     7.6     5.3
+59      INTA 6450       DAS     21      2       3       4       5       10      4.7
+60      CSE 6742        MSMG    3       1.3     2.5     4       5       5.8     3.7
+61      CS 8803 O15     Law     9       1.4     2       2       3       10.6    3.8
+62      MGT 6311        DM      22      1       2       2       4.5     7.9     3.2
+63      MGT 8813        FMX     7       1       1       2       2.5     3       1.9
+ALL     OMSCS   Courses 2142    4       10      14      20      30      15.5
+
+[2] distance=0.362  source='Courses Ranked by Difficulty Summer 2025'  chunk_index=20
+------------------------------------------------------------
+Tier 7 (Tell your Loved Ones goodbye)
+Rank    Course Number   AKA     A%      A-B%    W%      Grades Rank     Rating  Difficulty      Workload
+
+47      CS 8803 O08     Compiler        43.7%   62.5%   29.0%   39      4       49      49
+48      CS 6200 GIOS    30.2%   46.2%   48.8%   49      8       43      48
+49      CS 6515 GA      21.8%   62.1%   18.0%   46      46      47      45
+Notes:
+
+[3] distance=0.373  source='Courses Ranked by Difficulty Spring/Fall 2025'  chunk_index=21
+------------------------------------------------------------
+Tier 7 (Tell your Loved Ones goodbye)
+Rank    Course Number   AKA     A%      A-B%    W%      Grades Rank     Rating  Difficulty      Workload
+
+61      CSE 6220        IHPC    35.7%   51.8%   37.1%   62      25      60      55
+**62    CS 6211 SDCC    34.9%   54.2%   35.5%   58      2       65      64
+63      CS 6476 CV      36.5%   50.8%   33.9%   63      41      61      62
+64      CS 7210 DC      32.6%   56.%    30.9%   60      24      66      65
+65      CS 6475 CP      23.5%   43.9%   39.9%   66      46      49      58
+66      CS 8803 O08     Compiler        30.9%   47.6%   37.2%   64      4       64      66
+Notes:
+
+[4] distance=0.377  source='Courses Ranked by Difficulty Spring/Fall 2025'  chunk_index=12
+------------------------------------------------------------
+Recent data is generally weighed heavier since courses change over time. For this list, only reviews from Spring 2022 forward are considered, except for courses with less than 15 reviews where older reviews were used to increase sample size. For most courses, only grades from the most recent 5 long semesters are included. A few courses have on-campus offerings one semester/year that cannot be separated from OMSCS grades in lite because they have the same professor as the OMSCS section. For these …[truncated]
+
+[5] distance=0.378  source='Course & Specs Megathread'  chunk_index=0
+------------------------------------------------------------
+Course & Specs Megathread - Selection, Choices & Registration : r/OMSCS
+Detective-Raichu
+Course & Specs Megathread - Selection, Choices & Registration
+Megathread
+📌Specializations & Courses Megathread - Selection & Registration
+
+Welcome to the Specialization & Course Megathread for OMSCS!
+
+Now that you've {just been accepted / been here for a bit / been here for awhile}*, this thread is designed to help you navigate the various specializations offered and assist with selecting the right courses f …[truncated]
+
+[6] distance=0.380  source='Course & Specs Megathread'  chunk_index=1
+------------------------------------------------------------
+📝 Course Selection Guide
+
+A cheat code is to check out the student-run website at www.omscs.rocks.
+
+It details you the capacity of each course in each semester.
+
+It details you if the course capacity has been max'ed out before.
+
+Understand each of the Specialization Requirements
+
+All courses must be graded for it to be considered part of your degree fulfilment.
+
+Cores are mandatory courses for your specialization. They cannot be avoided.
+
+Electives are choices within your specialisations that al …[truncated]
+
+[7] distance=0.380  source='Courses Ranked by Difficulty Spring/Fall 2025'  chunk_index=14
+------------------------------------------------------------
+Tier 1 (Free Credits)
+Rank    Course Number   AKA     A%      A-B%    W%      Grades Rank     Rating  Difficulty      Workload
+
+1       MGT 6311        DM      75.0%   93.4%   3.8%    5       22      1       1
++2      CSE 6742        MSMG    88.4%   92.1%   6.8%    2       9       4       4
+3       CS 8803 O15     Law     77.0%   90.6%   6.1%    11      3       6       3
+4       MGT 8813        FMX     83.9%   90.0%   8.2%    6       64      3       2
+5       CS 6261 SIR     83.7%   93.8%   5.6%    1       41      9       9
+6       INTA 6450       DAS     80.9%   91.6%   6.3%    4       62      5       5
+
+[8] distance=0.381  source='Courses Ranked by Difficulty Summer 2025'  chunk_index=0
+------------------------------------------------------------
+All Courses Ranked by Difficulty 2025: Summer : r/OMSCS
+Stagef6
+All Courses Ranked by Difficulty 2025: Summer
+Other Courses
+
+This is a list which combines the last three years of grades and reviews data to sort all courses by average difficulty. Only Summer semester information is considered.
+
+```bash
+.venv/bin/python scripts/embed_and_retrieve.py query "What are the core classes for the Computer Graphics specialization?"
+```
+loading embedding model: all-MiniLM-L6-v2 ...
+
+QUERY: What are the core classes for the Computer Graphics specialization?
+------------------------------------------------------------
+
+[1] distance=0.333  source='Specialization in Computer Graphics'  chunk_index=0
+------------------------------------------------------------
+Specialization in Computer Graphics
+
+For a Master of Science in Computer Science, Specialization in Computer Graphics (15 hours), students must selectfrom the following:
+*The following is a complete look at the courses that may be selected to fulfill the Computer Graphics specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program.
+Core Courses (6 hours)
+Pick one (1) of:
+CS 6491 Foundations of Computer Graphics
+CS 6457 Video Game Design
+CS 7 …[truncated]
+
+[2] distance=0.347  source='Computer Graphics Specialization Courses Ranked by Difficulty (Spring/Fall)'  chunk_index=0
+------------------------------------------------------------
+Computer Graphics specialization — courses ranked by difficulty (Spring/Fall 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Computer Graphics specialization: CS 6457 Video Game Design (VGD) — rank 11, Tier 2 (Easy).
+Hardest course in the Computer Graphics specialization: CS 6475 Computational Photography (CP) — rank 65, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Computer Graphics courses, easiest to hardest:
+- rank 11: CS 6457 Video Game Design (VGD) — Tier 2
+- ran …[truncated]
+
+[3] distance=0.385  source='Computer Graphics Specialization Courses Ranked by Difficulty (Summer)'  chunk_index=0
+------------------------------------------------------------
+Computer Graphics specialization — courses ranked by difficulty (Summer 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Computer Graphics specialization: CS 6457 Video Game Design (VGD) — rank 10, Tier 2 (Easy).
+Hardest course in the Computer Graphics specialization: CS 6515 Introduction to Graduate Algorithms (GA) — rank 49, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Computer Graphics courses, easiest to hardest:
+- rank 10: CS 6457 Video Game Design (VGD) — Tier 2
+ …[truncated]
+
+[4] distance=0.421  source='Specialization in Human-Computer Interaction'  chunk_index=0
+------------------------------------------------------------
+Specialization in Human-Computer Interaction
+
+For a Master of Science in Computer Science, Specialization in Human-Computer Interaction (15 hours), students must selectfrom the following:
+
+*
+The following is a complete look at the courses that may be selected to fulfill the Human-Computer Interaction specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program
+.
+
+Core Courses (6 hours)
+
+CS 6456 Principles of User Interface Software OR
+CS 7470 …[truncated]
+
+[5] distance=0.432  source='Specialization in Computing Systems'  chunk_index=0
+------------------------------------------------------------
+Specialization in Computing Systems
+
+For a Master of Science in Computer Science, Specialization in Computing Systems (18 hours), students must selectfrom the following:
+*
+The following is a complete look at the courses that may be selected to fulfill the Computing Systems specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program
+.
+Core Courses (9 hours)
+CS 6505 Computability, Algorithms, and Complexity
+or
+CS 6515 Introduction to Graduate  …[truncated]
+
+[6] distance=0.466  source='Specialization in Computational Perception and Robotics'  chunk_index=0
+------------------------------------------------------------
+Specialization in Computational Perception and Robotics
+
+For a Master of Science in Computer Science, Specialization in Computational Perception and Robotics (15 hours), students must selectfrom the following:
+
+*The following is a complete look at the courses that may be selected to fulfill the Computational Perception and Robotics specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program.
+
+Core Courses (6 hours)
+
+Algorithms:Pick one (1) o …[truncated]
+
+[7] distance=0.468  source='Human-Computer Interaction Specialization Courses Ranked by Difficulty (Summer)'  chunk_index=0
+------------------------------------------------------------
+Human-Computer Interaction specialization — courses ranked by difficulty (Summer 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Human-Computer Interaction specialization: CS 7470 Mobile and Ubiquitous Computing (MUC) — rank 5, Tier 2 (Easy).
+Hardest course in the Human-Computer Interaction specialization: CS 6750 Human-Computer Interaction (HCI) — rank 23, Tier 4 (Medium).
+
+All ranked Human-Computer Interaction courses, easiest to hardest:
+- rank 5: CS 7470 Mobile and Ubiq …[truncated]
+
+[8] distance=0.472  source='Human-Computer Interaction Specialization Courses Ranked by Difficulty (Spring/Fall)'  chunk_index=0
+------------------------------------------------------------
+Human-Computer Interaction specialization — courses ranked by difficulty (Spring/Fall 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Human-Computer Interaction specialization: CS 6795 Introduction to Cognitive Science (ICS) — rank 7, Tier 2 (Easy).
+Hardest course in the Human-Computer Interaction specialization: CS 6750 Human-Computer Interaction (HCI) — rank 30, Tier 4 (Medium).
+
+All ranked Human-Computer Interaction courses, easiest to hardest:
+- rank 7: CS 6795 Introduc …[truncated]
+
+```bash
+.venv/bin/python scripts/embed_and_retrieve.py query "What are the elective options for Machine Learning?"
+```
+
+loading embedding model: all-MiniLM-L6-v2 ...
+
+QUERY: What are the elective options for Machine Learning?
+------------------------------------------------------------
+
+[1] distance=0.386  source='Specialization in Machine Learning'  chunk_index=0
+------------------------------------------------------------
+Specialization in Machine Learning
+
+For a Master of Science in Computer Science, Specialization in Machine Learning (15 hours), students must select from the following:
+*The following is a complete look at the courses that may be selected to fulfill the Machine Learning specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program.
+Core Courses (6 hours)
+Algorithms: Pick one (1) of:
+CS 6505 Computability, Algorithms, and Complexity
+CS 6515 Int …[truncated]
+
+[2] distance=0.442  source='Machine Learning Specialization Courses Ranked by Difficulty (Spring/Fall)'  chunk_index=0
+------------------------------------------------------------
+Machine Learning specialization — courses ranked by difficulty (Spring/Fall 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Machine Learning specialization: CS 7650 Natural Language (NLP) — rank 8, Tier 2 (Easy).
+Hardest course in the Machine Learning specialization: CS 6476 Computer Vision (CV) — rank 63, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Machine Learning courses, easiest to hardest:
+- rank 8: CS 7650 Natural Language (NLP) — Tier 2
+- rank 9: CS 6603 AI, E …[truncated]
+
+[3] distance=0.454  source='Machine Learning Specialization Courses Ranked by Difficulty (Summer)'  chunk_index=0
+------------------------------------------------------------
+Machine Learning specialization — courses ranked by difficulty (Summer 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Machine Learning specialization: CS 6603 AI, Ethics, and Society (AIES) — rank 3, Tier 1 (Summer Vacation).
+Hardest course in the Machine Learning specialization: CS 6515 Introduction to Graduate Algorithms (GA) — rank 49, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Machine Learning courses, easiest to hardest:
+- rank 3: CS 6603 AI, Ethics, and Socie …[truncated]
+
+[4] distance=0.529  source='Computational Perception and Robotics Specialization Courses Ranked by Difficulty (Spring/Fall)'  chunk_index=0
+------------------------------------------------------------
+Computational Perception and Robotics specialization — courses ranked by difficulty (Spring/Fall 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Computational Perception and Robotics specialization: CS 7650 Natural Language (NLP) — rank 8, Tier 2 (Easy).
+Hardest course in the Computational Perception and Robotics specialization: CS 6475 Computational Photography (CP) — rank 65, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Computational Perception and Robotics courses, …[truncated]
+
+[5] distance=0.529  source='Specialization in Computational Perception and Robotics'  chunk_index=0
+------------------------------------------------------------
+Specialization in Computational Perception and Robotics
+
+For a Master of Science in Computer Science, Specialization in Computational Perception and Robotics (15 hours), students must selectfrom the following:
+
+*The following is a complete look at the courses that may be selected to fulfill the Computational Perception and Robotics specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program.
+
+Core Courses (6 hours)
+
+Algorithms:Pick one (1) o …[truncated]
+
+[6] distance=0.541  source='Computational Perception and Robotics Specialization Courses Ranked by Difficulty (Summer)'  chunk_index=0
+------------------------------------------------------------
+Computational Perception and Robotics specialization — courses ranked by difficulty (Summer 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Computational Perception and Robotics specialization: CS 7650 Natural Language (NLP) — rank 9, Tier 2 (Easy).
+Hardest course in the Computational Perception and Robotics specialization: CS 6515 Introduction to Graduate Algorithms (GA) — rank 49, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Computational Perception and Robotics cou …[truncated]
+
+[7] distance=0.552  source='Specialization in Artificial Intelligence'  chunk_index=0
+------------------------------------------------------------
+Specialization in Artificial Intelligence (formerly Interactive Intelligence)
+
+For a Master of Science in Computer Science, Specialization in Artificial Intelligence (15 hours), students must select from the following:
+*The following is a complete look at the courses that may be selected to fulfill the Artificial Intelligence specialization, regardless of campus; only courses listed with
+bold
+ titles are offered through the online program.
+Core Courses (9 hours)
+Algorithms and Design: Take one ( …[truncated]
+
+[8] distance=0.602  source='Artificial Intelligence Specialization Courses Ranked by Difficulty (Spring/Fall)'  chunk_index=0
+------------------------------------------------------------
+Artificial Intelligence specialization — courses ranked by difficulty (Spring/Fall 2025). Rank 1 = easiest, higher rank = harder.
+
+Easiest course in the Artificial Intelligence specialization: CS 6795 Introduction to Cognitive Science (ICS) — rank 7, Tier 2 (Easy).
+Hardest course in the Artificial Intelligence specialization: CS 6476 Computer Vision (CV) — rank 63, Tier 7 (Tell your Loved Ones goodbye).
+
+All ranked Artificial Intelligence courses, easiest to hardest:
+- rank 7: CS 6795 Introducti …[truncated]
+
