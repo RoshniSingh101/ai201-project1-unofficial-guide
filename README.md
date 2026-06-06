@@ -199,13 +199,13 @@ Here is the demo video linked here that goes over the retrieval test results acr
 
 ---
 
-## Below are the associated chunks with the five questions from the demo video: 
+## Retrieval Test Examples - Relevant Chunks Returned for Queries
 
 ```bash
 .venv/bin/python scripts/embed_and_retrieve.py query "Please give me a list of medium-level courses to take for the human-computer interaction specialization in fall/spring semesters."
 ```
 loading embedding model: all-MiniLM-L6-v2 ...
-### Description: The chunks with the lowest distance are closest to the query because the source has context related to the human-computer interaction specialization or relevant courses. 
+### Description: The chunks with the lowest distance are closest to the query because the sources have context related to the human-computer interaction specialization. 
 ---
 
 QUERY: Please give me a list of medium-level courses to take for the human-computer interaction specialization in fall/spring semesters.
@@ -520,6 +520,8 @@ This is a list which combines the last three years of grades and reviews data to
 .venv/bin/python scripts/embed_and_retrieve.py query "What are the core classes for the Computer Graphics specialization?"
 ```
 loading embedding model: all-MiniLM-L6-v2 ...
+### Description: The chunks with the lowest distance are closest to the query because the sources have context related to the computer graphics specialization. 
+---
 
 QUERY: What are the core classes for the Computer Graphics specialization?
 ------------------------------------------------------------
@@ -631,6 +633,8 @@ All ranked Human-Computer Interaction courses, easiest to hardest:
 ```
 
 loading embedding model: all-MiniLM-L6-v2 ...
+### Description: The chunks with the lowest distance are closest to the query because the source has context related to the machine learning specialization. 
+---
 
 QUERY: What are the elective options for Machine Learning?
 ------------------------------------------------------------
