@@ -198,6 +198,8 @@ Here is the demo video linked here that goes over the retrieval test results acr
 .venv/bin/python scripts/embed_and_retrieve.py query "Please give me a list of medium-level courses to take for the human-computer interaction specialization in fall/spring semesters."
 ```
 loading embedding model: all-MiniLM-L6-v2 ...
+### Description: The chunks with the lowest distance are closest to the query because the source has context related to the human-computer interaction specialization or relevant courses. 
+---
 
 QUERY: Please give me a list of medium-level courses to take for the human-computer interaction specialization in fall/spring semesters.
 ------------------------------------------------------------
@@ -309,6 +311,8 @@ Algorithms:Pick one (1) o …[truncated]
 .venv/bin/python scripts/embed_and_retrieve.py query "Please give me a list of easy-level courses to take for computing systems."
 ```
 loading embedding model: all-MiniLM-L6-v2 ...
+### Description: The chunks are relevant because there is mention or context relating to computing systems and relevant courses. 
+---
 
 QUERY: Please give me a list of easy-level courses to take for computing systems.
 ------------------------------------------------------------
@@ -406,6 +410,8 @@ All ranked Computational Perception and Robotics cou …[truncated]
 venv/bin/python scripts/embed_and_retrieve.py query "What are some of the hardest courses in the OMSCS program?"
 ```
 loading embedding model: all-MiniLM-L6-v2 ...
+### Description: The chunks are relevant because workload distribution and course difficulty Reddit threads are the closest in semantic similarity to the query of finding the hardest courses in the OMSCS program. 
+---
 
 QUERY: What are some of the hardest courses in the OMSCS program?
 ------------------------------------------------------------
