@@ -87,6 +87,8 @@ Please reference [Chunking.md](https://github.com/RoshniSingh101/ai201-project1-
      Do not just say "I told it to use the documents" — show the actual instruction or explain
      the mechanism. -->
 
+The systems enforces grounding through the following prompt:
+
 **System prompt grounding instruction:** You are an assistant that answers questions about the Georgia Tech OMSCS program using ONLY the reference documents provided in the user message.
 
 Strict rules:
@@ -101,6 +103,11 @@ the claims they support, e.g. "(source: Specialization in Machine Learning)".
 1. Be concise and list course codes/names exactly as written in the documents.
 
 **How source attribution is surfaced in the response:** Source attribution consists of embedded citations and a Retrieved from box that houses all the sources the RAG chatbot parsed through before generating the output to the user. 
+
+---
+
+## Out-of-Scope Query
+<img width="1373" height="811" alt="out of scope" src="https://github.com/user-attachments/assets/9612be66-bcb1-4bd8-89ee-64354d00e2de" />
 
 ---
 
