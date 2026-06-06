@@ -181,6 +181,12 @@ the claims they support, e.g. "(source: Specialization in Machine Learning)".
 - *What I changed or overrode:* At the end, I needed to manually clean out the comments and ads from the Reddit threads. I could have converted the documents to pdf files, but I wanted a continuous pipeline of information flowing from these documents in case something changed.
 
 ---
+## Query Interface
+The user enters a question as input, and the system responds with an answer and sources the system used to retrieve the answer. <img width="1000" height="593" alt="Query Interface" src="https://github.com/user-attachments/assets/0b386993-a797-4828-a68e-df3600bb02a5" />
+Gif created with FreeConvert
+
+---
+
 ## Demo Video
 Here is the demo video linked here that goes over the retrieval test results across three queries and their associated chunks: https://drive.google.com/file/d/18FUEpTzV61jSuykKzEYUCWCQ9usKqVFc/view?usp=share_link
 
